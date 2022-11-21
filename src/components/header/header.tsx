@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.sass';
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
     <header className="header">
       <div className="header__wrapper">
         <div className="header__left">
-          <img src='/Logotype.png' alt='logo' className='logo'/>
+          <Link to="/"><img src='/Logotype.png' alt='logo' className='logo'/></Link>
           <nav className='header__nav'>
             <ul className='header__list'>
               <li className='header__item tournaments'>Турниры <img src='/Arrow.png' alt='Arrow' className='Arrow'/></li>

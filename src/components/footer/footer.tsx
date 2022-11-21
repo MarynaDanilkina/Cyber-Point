@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './footer.sass';
 
 const Footer = () => {
@@ -29,7 +30,7 @@ const Footer = () => {
               <img src='/Logotype1.png' alt='Logotype1' className='Logotype1' />
             </div>
             <div className='footer__LeftPart-info'>
-              <p>Политика конфиденциальности</p>
+              <Link to="/privacy">Политика конфиденциальности</Link>
               <p>© 2022 Cyber Point. All rights reserved.</p>
             </div>
           </div>
