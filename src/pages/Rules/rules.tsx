@@ -1,17 +1,17 @@
-import Footer from 'components/footer/footer';
-import Header from 'components/header/header';
 import React from 'react';
-import './privacy.sass';
+import Header from 'components/header/header';
+import './rules.sass';
+import Footer from 'components/footer/footer';
 
-const Privacy = () => {
+const Rules = () => {
   return (
     <>
       <header className="header _container">
-        <Header />
-        <div className='privacy__1stBlock'>
-          <h2>Политика конфиденциальности</h2>
+          <Header />
+          <div className='privacy__1stBlock'>
+          <h2>Регламент</h2>
         </div>
-      </header>
+        </header>
       <main className="main__wrapper">
         <div className='privacy__2ndBlock'>
           <div className='privacy__info-container'>
@@ -30,7 +30,7 @@ const Privacy = () => {
       </main>
       <Footer />
     </>
-    
+      
   );
 };
-export default Privacy;
+export default Rules;

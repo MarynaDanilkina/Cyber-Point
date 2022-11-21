@@ -4,15 +4,14 @@ import './header.sass';
 
 const Header = () => {
   return (
-    <header className="header">
       <div className="header__wrapper">
         <div className="header__left">
           <Link to="/"><img src='/Logotype.png' alt='logo' className='logo'/></Link>
           <nav className='header__nav'>
             <ul className='header__list'>
               <li className='header__item tournaments'>Турниры <img src='/Arrow.png' alt='Arrow' className='Arrow'/></li>
-              <li className='header__item'>Рейтинг</li>
-              <li className='header__item'>Регламент</li>
+              <li className='header__item'><Link to="/InDev">Рейтинг</Link></li>
+              <li className='header__item'><Link to="/rules">Регламент</Link></li>
               <li className='header__item'>Контакты</li>
             </ul>
           </nav>
@@ -27,7 +26,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
   );
 };
 export default Header;

@@ -5,7 +5,7 @@ import './footer.sass';
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='footer__wrapper'>
+      <div className='footer__wrapper _container'>
         <div className='footer__ThroughBlock'>
           <div className='footer__LeftPart-Noise'></div>
           <div className='footer__card'>
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className='footer__FooterContainer'>
           <div className='footer__LeftPart'>
             <div className='footer__LeftPart-logo'>
-              <img src='/Logotype1.png' alt='Logotype1' className='Logotype1' />
+              <Link to="/"><img src='/Logotype1.png' alt='Logotype1' className='Logotype1' /></Link>
             </div>
             <div className='footer__LeftPart-info'>
               <Link to="/privacy">Политика конфиденциальности</Link>
