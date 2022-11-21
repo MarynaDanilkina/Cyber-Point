@@ -1,19 +1,30 @@
 import DropDownNavlink from 'components/DropDownNavlink/dropDownNavlink';
+import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { reduserSlice } from 'reduxStore/Reducer';
 import './header.sass';
 
 const Header = () => {
   const [clickTournaments, setClickTournaments] = useState(false);
+  const { user } = useAppSelector((state) => state);
+  const { login } = reduserSlice.actions;
+  const dispatch = useAppDispatch();
+  
   useEffect(() => {
-    console.log(clickTournaments);
-  }, [clickTournaments]);
+    console.log(user);
+  }, [user]);
+  
   function openTournamentsDiv(){
     if (clickTournaments === false) {
       setClickTournaments(true)
     } else {
       setClickTournaments(false)
     }
+  }
+
+  function Войти() {
+    dispatch(login());
   }
   return (
       <div className="header__wrapper">
@@ -29,11 +40,27 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="header__right">
-          <div className='header__head'>
-            <p className='header__player'>Игрок</p>
-            <p className='header__input'>Войти</p>
-          </div>
+      <div className="header__right">
+        { !user? (
+        <div className='header__head'>
+          <p className='header__player'>Игрок</p>
+          <p className='header__input' onClick={() => Войти()}>Войти</p>
+        </div>
+        ) : (
+            <>
+              <div className='header__head'>
+                <p className='header__player'>Команда</p>
+                <p className='header__input'>Отсутствует</p>
+              </div>
+              <div className='Divider'></div>
+              <div className='header__head'>
+                <p className='header__player'>Игрок</p>
+                <p className='header__input'>ItsGeorge</p>
+              </div>
+            </>
+        
+            
+        )}
           <div className='header__pfp'>
             <img src='/PFP.png' alt='pfp' className='pfp'/>
           </div>

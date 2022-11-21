@@ -1,5 +1,3 @@
-import Footer from 'components/footer/footer';
-import Header from 'components/header/header';
 import InDev from 'pages/InDev/inDev';
 import Main from 'pages/Main/main';
 import NextTournaments from 'pages/NextTournaments/nextTournaments';
