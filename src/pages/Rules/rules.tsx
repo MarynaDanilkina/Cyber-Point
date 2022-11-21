@@ -8,7 +8,7 @@ const Rules = () => {
     <>
       <header className="header _container">
           <Header />
-          <div className='privacy__1stBlock'>
+          <div className='header__title'>
           <h2>Регламент</h2>
         </div>
         </header>

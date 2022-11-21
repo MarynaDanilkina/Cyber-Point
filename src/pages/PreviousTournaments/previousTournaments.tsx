@@ -1,15 +1,15 @@
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
 import React from 'react';
-import './nextTournaments.sass';
+import './previousTournaments.sass';
 
-const NextTournaments = () => {
+const PreviousTournaments = () => {
   return (
     <>
       <header className="header _container">
         <Header />
         <div className='header__title'>
-          <h2>Предстоящие турниры</h2>
+          <h2>Прошедшие турниры</h2>
         </div>
       </header>
       <main className="main__wrapper">
@@ -51,4 +51,4 @@ const NextTournaments = () => {
     </>
   );
 };
-export default NextTournaments;
+export default PreviousTournaments;
