@@ -34,7 +34,13 @@ const Footer = () => {
             </div>
           </div>
           <div className='footer__RightPart'>
-            
+            <div className='footer__RightPart-email'>
+              <p className='RightPart-email__text'>Сотрудничество</p>
+              <p className='RightPart-email__p'><a className='RightPart-email' href="mailto:info@cyber-point.ru">info@cyber-point.ru</a></p>
+            </div>
+            <div className='footer__RightPart-info'>
+              <img src='/Socials.png' alt='Socials' className='Socials' />
+            </div>
           </div>
         </div>
       </div>

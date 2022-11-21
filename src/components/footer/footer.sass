@@ -46,27 +46,56 @@
   background-image: url(./Background3.png)
   display: flex
   align-items: flex-end
+  justify-content: space-between
   position: absolute
   top: 260px
   z-index: -1
-
-.footer__LeftPart
-  margin-bottom: 40px
-  margin-left: 48px
-  .footer__LeftPart-logo
-    margin-bottom: 84px
-  .footer__LeftPart-info
-    gap: 16px
-    display: flex
-    flex-direction: column
-    p
-      font-family: 'RF Dewi Expanded'
-      font-style: normal
-      font-weight: 600
-      font-size: 12px
-      line-height: 160%
-      color: #141515
-      margin: 0
+  .footer__RightPart
+    margin-bottom: 40px
+    margin-right: 48px
+    .footer__RightPart-email
+      margin-bottom: 80px
+      .RightPart-email__text
+        font-family: 'RF Dewi Expanded'
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 160%
+        text-align: right
+        color: #141515
+        margin: 0
+      .RightPart-email__p
+        margin: 0
+        .RightPart-email
+          font-family: 'RF Dewi Expanded'
+          font-style: normal
+          font-weight: 700
+          font-size: 32px
+          line-height: 150%
+          text-align: right
+          text-decoration-line: underline
+          text-transform: uppercase
+          color: #46CDC4
+    .footer__RightPart-info
+      display: flex
+      justify-content: flex-end
+  .footer__LeftPart
+    margin-bottom: 40px
+    margin-left: 48px
+    .footer__LeftPart-logo
+      margin-bottom: 84px
+    .footer__LeftPart-info
+      gap: 16px
+      display: flex
+      flex-direction: column
+      p
+        font-family: 'RF Dewi Expanded'
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 160%
+        color: #141515
+        margin: 0
 .footer__LeftPart-Noise
   background-image: url(./Noise.png)
   height: 258px
