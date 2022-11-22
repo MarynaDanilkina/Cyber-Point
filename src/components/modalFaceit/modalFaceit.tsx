@@ -5,10 +5,10 @@ import { reduserSlice } from 'reduxStore/Reducer';
 const ModalFaceit = () => {
   const dispatch = useAppDispatch();
   const { modalFaceit } = useAppSelector((state) => state);
-  const { closeModalDiscord,closeModalFaceit, login } = reduserSlice.actions;
-  function Войти() {
+  const { loginFaceit ,closeModalFaceit } = reduserSlice.actions;
+  function Привязать() {
     dispatch(closeModalFaceit())
-    dispatch(login());
+    dispatch(loginFaceit())
   }
   function Закрыть() {
     dispatch(closeModalFaceit())
@@ -23,7 +23,7 @@ const ModalFaceit = () => {
               <img src='/Icons.png' alt='pfp' className='pfp' onClick={() => Закрыть()}/>
             </div>
             <div className='modal__info-button'>
-              <img src='/Привязыть.png' alt='pfp' className='pfp' onClick={() => Войти()} />
+              <img src='/Привязыть.png' alt='pfp' className='pfp' onClick={() => Привязать()} />
             </div>
           </div>
         </div>

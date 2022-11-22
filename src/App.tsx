@@ -1,3 +1,4 @@
+import EndedTournament from 'pages/EndedTournament/EndedTournament';
 import InDev from 'pages/InDev/inDev';
 import Main from 'pages/Main/main';
 import NextTournaments from 'pages/NextTournaments/nextTournaments';
@@ -23,6 +24,7 @@ function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/team' element={<Team />} />
         <Route path='/Tournament' element={<Tournament />} />
+        <Route path='/EndedTournament' element={<EndedTournament />} />
       </Routes>
     </>
     

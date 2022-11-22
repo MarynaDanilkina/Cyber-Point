@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 export type IInitialState = {
   user: boolean;
+  userFaceit: boolean;
   modalDiscord: boolean;
   modalFaceit: boolean;
   modalTeamNew: boolean;
@@ -10,6 +11,7 @@ export type IInitialState = {
 };
 export const initialState: IInitialState = {
   user: false,
+  userFaceit:false,
   modalDiscord: false,
   modalFaceit: false,
   modalTeamNew: false,
@@ -27,6 +29,9 @@ export const reduserSlice = createSlice({
     },
     deleteLogin(state) {
       state.user = false;
+    },
+    loginFaceit(state) {
+      state.userFaceit = true;
     },
     openModalDiscord(state) {
       state.modalDiscord = true;

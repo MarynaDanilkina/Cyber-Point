@@ -2,6 +2,7 @@ import Card from 'components/Card/card';
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
 import ModalExit from 'components/modalExit/modalExit';
+import ModalFaceit from 'components/modalFaceit/modalFaceit';
 import PFP from 'components/UIKit/PFP/PFP';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
@@ -9,11 +10,14 @@ import { reduserSlice } from 'reduxStore/Reducer';
 import './Profile.sass';
 
 const Profile = () => {
-  const { modalExit } = useAppSelector((state) => state);
-  const { openModalExit } = reduserSlice.actions;
+  const { modalExit, modalFaceit, userFaceit } = useAppSelector((state) => state);
+  const { openModalFaceit, openModalExit } = reduserSlice.actions;
   const dispatch = useAppDispatch();
   function Выйти() {
     dispatch(openModalExit())
+  }
+  function МодалкаFaceit() {
+    dispatch(openModalFaceit())
   }
   return (
     <>
@@ -32,8 +36,8 @@ const Profile = () => {
                   <div className="profile__exit-faceit" onClick={() => Выйти()}>
                     <p>Выйти</p>
                   </div>
-                  <div className="profile__exit-faceit">
-                    <p>Faceit Профиль</p>
+                  <div className="profile__exit-faceit" onClick={() => МодалкаFaceit()}>
+                    <p>{userFaceit? 'Faceit Профиль' : 'Привязать Faceit' }</p>
                   </div>
                 </div>
               </div>
@@ -48,6 +52,7 @@ const Profile = () => {
         </div>
       </header>
       {modalExit ? <ModalExit /> : null}
+      {modalFaceit ? <ModalFaceit /> : null}
       <Footer />
     </>
     
