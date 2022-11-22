@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dggszs');
+  src:  url('fonts/icomoon.eot?dggszs#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dggszs') format('truetype'),
+    url('fonts/icomoon.woff?dggszs') format('woff'),
+    url('fonts/icomoon.svg?dggszs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-User:before {
+  content: "\e903";
+}
+.icon-ArrowBottom:before {
+  content: "\e900";
+}
+.icon-ArrowTop:before {
+  content: "\e901";
+}
+.icon-ArrowRight:before {
+  content: "\e902";
+}
+.icon-Copy:before {
+  content: "\e90e";
+}
+.icon-Cross:before {
+  content: "\e90f";
+}
+.icon-Edit:before {
+  content: "\e910";
+}
+.icon-Favorite:before {
+  content: "\e911";
+}
+.icon-Game:before {
+  content: "\e912";
+}
+.icon-Steam:before {
+  content: "\e913";
+}
+.icon-Upload:before {
+  content: "\e914";
+}
+.icon-VK:before {
+  content: "\e915";
+}
+.icon-YouTube:before {
+  content: "\e916";
+}

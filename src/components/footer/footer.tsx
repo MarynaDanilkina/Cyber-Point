@@ -1,3 +1,4 @@
+import Logotype from 'components/UIKit/PFP/Icon/Logotype';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.sass';
@@ -27,7 +28,7 @@ const Footer = () => {
         <div className='footer__FooterContainer '>
           <div className='footer__LeftPart'>
             <div className='footer__LeftPart-logo'>
-              <Link to="/"><img src='/Logotype1.png' alt='Logotype1' className='Logotype1' /></Link>
+              <Link to="/"><Logotype/></Link>
             </div>
             <div className='footer__LeftPart-info'>
               <Link to="/privacy">Политика конфиденциальности</Link>

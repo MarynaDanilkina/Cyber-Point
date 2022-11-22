@@ -1,5 +1,9 @@
 import DropDownNavlink from 'components/DropDownNavlink/dropDownNavlink';
 import ModalDiscord from 'components/modalDiscord/modalDiscord';
+import Arrow from 'components/UIKit/PFP/Icon/arrow';
+import ArrowTop from 'components/UIKit/PFP/Icon/arrowTop';
+import Logotype from 'components/UIKit/PFP/Icon/Logotype';
+import User from 'components/UIKit/PFP/Icon/user';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React, {  useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -27,10 +31,10 @@ const Header = () => {
     <>
       <div className="header__wrapper">
         <div className="header__left">
-          <Link to="/"><img src='/Logotype.png' alt='logo' className='logo'/></Link>
+          <Link to="/"><Logotype/></Link>
           <nav className='header__nav'>
             <ul className='header__list'>
-              <li className='header__item tournaments' onClick={() => openTournamentsDiv()}>Турниры <img src='/Arrow.png' alt='Arrow' className='Arrow'/></li>
+              <li className='header__item tournaments' onClick={() => openTournamentsDiv()}>Турниры { clickTournaments? <ArrowTop/> : <Arrow/>}</li>
               <li className='header__item'><Link to="/InDev">Рейтинг</Link></li>
               <li className='header__item'><Link to="/rules">Регламент</Link></li>
             {clickTournaments === true ? <DropDownNavlink /> : null}
@@ -58,7 +62,7 @@ const Header = () => {
             </>
         )}
           <div className='header__pfp'>
-            <img src='/PFP.png' alt='pfp' className='pfp'/>
+            <User />
           </div>
         </div>
       </div>

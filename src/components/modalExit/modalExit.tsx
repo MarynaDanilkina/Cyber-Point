@@ -1,3 +1,4 @@
+import ButtonModal from 'components/UIKit/buttonModal/buttonModal';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
 import { reduserSlice } from 'reduxStore/Reducer';
@@ -22,8 +23,8 @@ const ModalExit = () => {
               <p>Вы уверены, что хотите выйти?</p>
               <img src='/Icons.png' alt='pfp' className='pfp' onClick={() => Закрыть()}/>
             </div>
-            <div className='modal__info-button'>
-              <img src='/выйти.png' alt='pfp' className='pfp' onClick={() => Выйти()} />
+            <div className='modal__info-button' onClick={() => Выйти()}>
+              <ButtonModal title={'да, выйти'}/>
             </div>
           </div>
         </div>

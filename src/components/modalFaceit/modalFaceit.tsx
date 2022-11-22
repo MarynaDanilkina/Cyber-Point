@@ -1,3 +1,4 @@
+import ButtonModal from 'components/UIKit/buttonModal/buttonModal';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
 import { reduserSlice } from 'reduxStore/Reducer';
@@ -22,8 +23,8 @@ const ModalFaceit = () => {
               <p>Сначала привяжите faceit</p>
               <img src='/Icons.png' alt='pfp' className='pfp' onClick={() => Закрыть()}/>
             </div>
-            <div className='modal__info-button'>
-              <img src='/Привязыть.png' alt='pfp' className='pfp' onClick={() => Привязать()} />
+            <div className='modal__info-button' onClick={() => Привязать()} >
+              <ButtonModal title={'Привязать'}/>
             </div>
           </div>
         </div>

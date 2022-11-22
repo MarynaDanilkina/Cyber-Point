@@ -1,3 +1,4 @@
+import ButtonModal from 'components/UIKit/buttonModal/buttonModal';
 import { useAppDispatch } from 'interface/interface';
 import React from 'react';
 import { reduserSlice } from 'reduxStore/Reducer';
@@ -23,7 +24,10 @@ const ModalDiscord = () => {
               <img src='/Icons.png' alt='pfp' className='pfp' onClick={() => Закрыть()}/>
             </div>
             <div className='modal__info-button'>
-              <img src='/Войти.png' alt='pfp' className='pfp' onClick={() => Войти()} />
+              
+              <div className="" onClick={() => Войти()}>
+                <ButtonModal title={'Войти'} />
+              </div>
             </div>
           </div>
         </div>

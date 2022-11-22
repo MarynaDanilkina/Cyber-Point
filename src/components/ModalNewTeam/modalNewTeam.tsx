@@ -1,5 +1,6 @@
 import BannerTeams from 'components/BaannerTeams/BannerTeams';
 import LogoTeams from 'components/logoTeams/logoTeams';
+import ButtonModal from 'components/UIKit/buttonModal/buttonModal';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
@@ -163,9 +164,9 @@ const ModalNewTeam = () => {
                 </label>
               </div>
               <div className='modal__info-button'>
-                <button type="submit">
-                  <img src='/СоздатьКоманду.png' alt='pfp' className='pfp' onClick={() => СоздатьКоманду()} />
-                </button>
+                  <div className="" onClick={() => СоздатьКоманду()} >
+                    <ButtonModal title={'Создать Команду'}/>
+                  </div>
               </div>
             </form>
           </div>
