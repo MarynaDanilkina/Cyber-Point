@@ -1,0 +1,117 @@
+.modal__container
+  .modal__team
+    background: #141515
+    border-radius: 8px
+    width: 1208px
+    display: flex
+    justify-content: center
+    align-items: center
+    .modal__info-container
+      display: flex
+      flex-direction: column
+      gap: 64px
+      margin: 56px 0px
+      .modal__info
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+          font-family: 'RF Dewi Expanded'
+          font-style: normal
+          font-weight: 700
+          font-size: 40px
+          line-height: 150%
+          text-transform: uppercase
+          color: #FFFFFF
+          margin: 0
+        img
+          width: 32px
+          height: 32px
+      .modal__form-team
+        display: flex
+        flex-direction: column
+        gap: 64px
+        .modal__info-logo
+          display: flex
+          justify-content: space-between
+          align-items: flex-start
+        .modal__info-infoTeam
+          .modal__info__title
+            margin-bottom: 24px
+            p
+              font-family: 'RF Dewi Expanded'
+              font-style: normal
+              font-weight: 700
+              font-size: 24px
+              line-height: 160%
+              color: #FFFFFF
+              margin: 0
+          .modal__input-container
+            display: flex
+            gap: 24px
+            flex-direction: column
+            .modal__input
+              display: flex
+              justify-content: space-between
+              align-items: flex-start
+              position: relative
+              label
+                .modal__input-teams
+                  width: 496px
+                  border: 1px solid #505353
+                  border-radius: 4px
+                  background-color: transparent
+            .modal__input__description
+              label
+                .modal__input-teams__description
+                  width: 1048px
+                  height: 126px
+                  border: 1px solid #505353
+                  border-radius: 4px
+                  background-color: transparent
+          label
+            .modal__input-copy
+              position: absolute
+              right: 16px
+              top: 16px
+            .modal__input-teamsLink
+              width: 1048px
+              height: 28px
+              border: 1px solid #505353
+              border-radius: 4px
+              background-color: transparent
+        .modal__info-button
+          button
+            border: none
+            padding: 0
+
+input::placeholder
+  font-family: 'RF Dewi Expanded'
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 100%
+  color: #505353
+
+input, textarea
+  font-family: 'RF Dewi Expanded'
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 100%
+  color: #505353
+  padding: 16px 16px
+input:focus, textarea:focus
+  border: 1px solid #46CDC4
+input:active, textarea:active
+  border: 1px solid #46CDC4
+.error
+  font-family: 'RF Dewi Expanded'
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 160%
+  color: #CD4646
+  margin: 8px 0px 0px
+.input-file
+  display: none

@@ -68,4 +68,3 @@ const Header = () => {
   );
 };
 export default Header;
-//{ modalFaceit ? <ModalFaceit /> : null }
