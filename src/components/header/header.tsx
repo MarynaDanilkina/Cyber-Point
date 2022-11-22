@@ -47,8 +47,8 @@ const Header = () => {
         ) : (
             <>
               <div className='header__head'>
-                <p className='header__player'>Команда</p>
-                <p className='header__input'>Отсутствует</p>
+                  <p className='header__player'>Команда</p>
+                  <p className='header__input'><Link to="/team">Отсутствует</Link></p>
               </div>
               <div className='Divider'></div>
               <div className='header__head'>

@@ -1,6 +1,7 @@
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './previousTournaments.sass';
 
 const PreviousTournaments = () => {
@@ -17,31 +18,31 @@ const PreviousTournaments = () => {
           <div className='tournament-cards'>
             <div className='tournament-name__container'>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
               <div className='tournament-name__card'>
-                <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import Header from 'components/header/header';
 import ModalNewTeam from 'components/ModalNewTeam/modalNewTeam';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { reduserSlice } from 'reduxStore/Reducer';
 import './main.sass';
 
@@ -32,34 +33,34 @@ const Main = () => {
               <div className=' main__3dBlock-tournaments upcoming__tournaments'>
                 <div className='Block-tournaments__text'>
                   <h2>ПРЕДСТОЯЩИЕ ТУРНИРЫ</h2>
-                  <img src='/LinkButton.png' alt='LinkButton' className='LinkButton'/>
+                  <Link to="/Tournament"><img src='/LinkButton.png' alt='LinkButton' className='LinkButton'/></Link>
                 </div>
                 <div className='Block-tournaments__cards'>
                   <div className='Block-tournaments__card'>
-                    <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                    <Link to="/Tournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
                   </div>
                   <div className='Block-tournaments__card'>
-                    <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                    <Link to="/Tournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
                   </div>
                   <div className='Block-tournaments__card'>
-                    <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                    <Link to="/Tournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
                   </div>
                 </div>
               </div>
               <div className='main__3dBlock-tournaments past__tournaments'>
                 <div className='Block-tournaments__text'>
                   <h2>ПРОШЕДШИЕ ТУРНИРЫ</h2>
-                  <img src='/LinkButton.png' alt='LinkButton' className='LinkButton'/>
+                  <Link to="/PreviousTournaments"><img src='/LinkButton.png' alt='LinkButton' className='LinkButton'/></Link>
                 </div>
                 <div className='Block-tournaments__cards bottom'>
                   <div className='Block-tournaments__card'>
-                    <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                    <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
                   </div>
                   <div className='Block-tournaments__card'>
-                    <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                    <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
                   </div>
                   <div className='Block-tournaments__card'>
-                    <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
+                    <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
                   </div>
                 </div>
               </div>

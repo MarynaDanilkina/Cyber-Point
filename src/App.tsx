@@ -5,6 +5,8 @@ import PreviousTournaments from 'pages/PreviousTournaments/previousTournaments';
 import Privacy from 'pages/Privacy/privacy';
 import Profile from 'pages/Profile/Profile';
 import Rules from 'pages/Rules/rules';
+import Team from 'pages/Team/Team';
+import Tournament from 'pages/Tournament/Tournament';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
@@ -19,6 +21,8 @@ function App() {
         <Route path='/NextTournaments' element={<NextTournaments />} />
         <Route path='/PreviousTournaments' element={<PreviousTournaments />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/team' element={<Team />} />
+        <Route path='/Tournament' element={<Tournament />} />
       </Routes>
     </>
     
