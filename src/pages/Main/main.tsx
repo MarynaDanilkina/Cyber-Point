@@ -51,7 +51,7 @@ const Main = () => {
                   <h2>ПРОШЕДШИЕ ТУРНИРЫ</h2>
                   <img src='/LinkButton.png' alt='LinkButton' className='LinkButton'/>
                 </div>
-                <div className='Block-tournaments__cards'>
+                <div className='Block-tournaments__cards bottom'>
                   <div className='Block-tournaments__card'>
                     <img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/>
                   </div>

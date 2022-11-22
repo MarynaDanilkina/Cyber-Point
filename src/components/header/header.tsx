@@ -1,8 +1,7 @@
 import DropDownNavlink from 'components/DropDownNavlink/dropDownNavlink';
 import ModalDiscord from 'components/modalDiscord/modalDiscord';
-import ModalFaceit from 'components/modalFaceit/modalFaceit';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import { Link } from 'react-router-dom';
 import { reduserSlice } from 'reduxStore/Reducer';
 import './header.sass';
@@ -54,7 +53,7 @@ const Header = () => {
               <div className='Divider'></div>
               <div className='header__head'>
                 <p className='header__player'>Игрок</p>
-                <p className='header__input'>ItsGeorge</p>
+                <p className='header__input'><Link to="/profile">ItsGeorge</Link></p>
               </div>
             </>
         )}

@@ -16,13 +16,11 @@ export interface TeamForm {
 const ModalNewTeam = () => {
   const dispatch = useAppDispatch();
   const { closeModalFaceit, login } = reduserSlice.actions;
-  const { addLogoTeams, addBannerTeams } = reduserSlice.actions;
-  function Войти() {
-    dispatch(closeModalFaceit())
-    dispatch(login());
+  const { addLogoTeams, addBannerTeams, closeModalNewTeam } = reduserSlice.actions;
+  function СоздатьКоманду() {
   }
   function Закрыть() {
-    dispatch(closeModalFaceit())
+    dispatch(closeModalNewTeam())
   }
   function setImageLogo(imageLogo: Blob) {
     const logo = URL.createObjectURL(imageLogo!)
@@ -40,8 +38,7 @@ const ModalNewTeam = () => {
   } = useForm<TeamForm>()
   const onSubmit: SubmitHandler<TeamForm> = (data) => {
     reset();
-    dispatch(addLogoTeams('/logoTeamNew.png'));
-    dispatch(addBannerTeams('/Banner.png'));
+    dispatch(closeModalNewTeam())
   };
   
   return (
@@ -167,7 +164,7 @@ const ModalNewTeam = () => {
               </div>
               <div className='modal__info-button'>
                 <button type="submit">
-                  <img src='/СоздатьКоманду.png' alt='pfp' className='pfp' onClick={() => Войти()} />
+                  <img src='/СоздатьКоманду.png' alt='pfp' className='pfp' onClick={() => СоздатьКоманду()} />
                 </button>
               </div>
             </form>

@@ -3,6 +3,7 @@ import Main from 'pages/Main/main';
 import NextTournaments from 'pages/NextTournaments/nextTournaments';
 import PreviousTournaments from 'pages/PreviousTournaments/previousTournaments';
 import Privacy from 'pages/Privacy/privacy';
+import Profile from 'pages/Profile/Profile';
 import Rules from 'pages/Rules/rules';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
@@ -17,6 +18,7 @@ function App() {
         <Route path='/InDev' element={<InDev />} />
         <Route path='/NextTournaments' element={<NextTournaments />} />
         <Route path='/PreviousTournaments' element={<PreviousTournaments />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </>
     

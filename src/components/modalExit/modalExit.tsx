@@ -1,17 +1,17 @@
-import { useAppDispatch } from 'interface/interface';
+import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
 import { reduserSlice } from 'reduxStore/Reducer';
-import './modalDiscord.sass';
 
-const ModalDiscord = () => {
+const ModalExit = () => {
   const dispatch = useAppDispatch();
-  const { closeModalDiscord, login } = reduserSlice.actions;
-  function Войти() {
-    dispatch(closeModalDiscord())
-    dispatch(login())
+  const { modalFaceit } = useAppSelector((state) => state);
+  const { closeModalExit, deleteLogin } = reduserSlice.actions;
+  function Выйти() {
+    dispatch(closeModalExit())
+    dispatch(deleteLogin());
   }
   function Закрыть() {
-    dispatch(closeModalDiscord())
+    dispatch(closeModalExit())
   }
   return (
     <>
@@ -19,11 +19,11 @@ const ModalDiscord = () => {
         <div className="modal">
           <div className="modal__info-container">
             <div className='modal__info'>
-              <p>Вход через discord</p>
+              <p>Вы уверены, что хотите выйти?</p>
               <img src='/Icons.png' alt='pfp' className='pfp' onClick={() => Закрыть()}/>
             </div>
             <div className='modal__info-button'>
-              <img src='/Войти.png' alt='pfp' className='pfp' onClick={() => Войти()} />
+              <img src='/выйти.png' alt='pfp' className='pfp' onClick={() => Выйти()} />
             </div>
           </div>
         </div>
@@ -31,4 +31,4 @@ const ModalDiscord = () => {
     </>
   );
 };
-export default ModalDiscord;
+export default ModalExit;
