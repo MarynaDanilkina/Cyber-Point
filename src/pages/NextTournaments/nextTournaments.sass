@@ -9,10 +9,47 @@
     display: flex
     justify-content: center
     .tournament-name__container
-      display: flex
-      justify-content: space-between
-      flex-wrap: wrap
-      gap: 24px
-      margin-bottom: 955px
-      /**z-index: 1
-      .tournament-name__card
+      .tournament__hidden
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 24px
+        margin-bottom: 955px
+        /**overflow: hidden
+        /**max-width: 1920px
+        .tournament-name__card
+@media screen and (max-width: 1500px)
+  .tournament-name__card
+    width: 48%
+    height: 19%
+@media screen and (max-width: 900px)
+  .tournament-name__card
+    width: 96%
+    height: 6%
+@media screen and (max-width: 500px)
+  .tournament-name__card
+    width: 280px
+    height: 6%
+  .card-tournaments__bottom
+    display: none
+  .tournament-cards__container .tournament-cards .tournament-name__container .tournament__hidden
+    flex-wrap: nowrap
+    position: relative
+    left: 0%
+  .tournament-name__container
+    width: 400px
+    overflow: hidden
+  .tournament-cards__container .tournament-cards
+    padding: 0px
+  .card-Upcomingtournaments__container
+    width: 320px
+@media screen and (max-width: 440px)
+  .tournament-name__container
+    width: 360px
+    overflow: hidden
+  .tournament-cards__container .tournament-cards .tournament-name__container .tournament__hidden
+    left: 7%
+  .tournament-cards__container
+    margin: 119px auto 0px
+  .card-Upcomingtournaments__container .card-tournaments .card-tournaments__bottom-container .card-tournaments__bottom-price p
+    font-size: 29px

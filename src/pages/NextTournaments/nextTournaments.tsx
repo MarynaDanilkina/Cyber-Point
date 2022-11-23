@@ -18,33 +18,36 @@ const NextTournaments = () => {
         <div className='tournament-cards__container _container'>
           <div className='tournament-cards'>
             <div className='tournament-name__container'>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+              <div className="tournament__hidden">
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
+                <div className='tournament-name__card'>
+                  <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
+                </div>
               </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
-              <div className='tournament-name__card'>
-                <Link to="/Tournament"><CardUpcomingTournaments  date={'20.11.2022'} title={'Название турнира'} price={'$ 330'} /></Link>
-              </div>
+              
             </div>
           </div>
         </div>
