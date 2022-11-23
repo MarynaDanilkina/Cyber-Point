@@ -10,9 +10,11 @@ header.header__inDev
         display: flex
         flex-direction: column
         gap: 64px
-        .header-inDev__info-text
+        .header-inDev__info-text404
           display: flex
           justify-content: center
+          flex-direction: column
+          align-items: center
           h3
             margin: 0
             font-style: normal
@@ -23,6 +25,14 @@ header.header__inDev
             text-transform: uppercase
             color: #F7FDFC
             width: 894px
+          p
+            margin-top: 24px
+            font-weight: 400
+            font-size: 32px
+            line-height: 160%
+            text-align: center
+            color: #787D7D
+            padding: 0px 20px
         .header-inDev__info-button
           display: flex
           justify-content: center
@@ -55,12 +65,17 @@ header.header__inDev
           margin: 0
           p
             margin: 0
+@media screen and (max-width: 1250px)
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 p
+    font-size: 26px
 @media screen and (max-width: 1000px)
-  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text h3
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 h3
     font-size: 50px
     width: 700px
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 p
+    font-size: 24px
 @media screen and (max-width: 800px)
-  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text h3
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 h3
     font-size: 45px
     width: 500px
 @media screen and (max-width: 700px)
@@ -71,11 +86,15 @@ header.header__inDev
       padding: 0px
   header.header__inDev .header-inDev__container .header-inDev__info-container
     min-height: calc(100vh - 104px - 78.5px)!important
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 p
+    font-size: 22px
 @media screen and (max-width: 600px)
-  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text h3
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 h3
     font-size: 35px
     width: 400px
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 p
+    font-size: 20px
 @media screen and (max-width: 450px)
-  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text h3
+  header.header__inDev .header-inDev__container .header-inDev__info-container .header-inDev__info .header-inDev__info-text404 h3
     font-size: 32px
     width: 312px

@@ -2,9 +2,10 @@ import Header from 'components/header/header';
 import ButtonMain from 'components/UIKit/button/ButtonMain';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './inDev.sass';
+import './NotFoundPage.sass';
 
-const InDev = () => {
+
+const NotFoundPage = () => {
   return (
     <>
       <header className="header header__inDev _container">
@@ -12,8 +13,9 @@ const InDev = () => {
           <Header />
           <div className='header-inDev__info-container'>
             <div className="header-inDev__info">
-              <div className="header-inDev__info-text">
-                <h3>Страница в разработке</h3>
+              <div className="header-inDev__info-text404">
+                <h3>Ошибка 404</h3>
+                <p>Страницы, которую Вы пытаетесь найти не существует 😥</p>
               </div>
               <div className="header-inDev__info-button">
                 <Link to="/"><ButtonMain /></Link>
@@ -34,4 +36,4 @@ const InDev = () => {
     
   );
 };
-export default InDev;
+export default NotFoundPage;
