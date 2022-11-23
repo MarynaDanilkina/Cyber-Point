@@ -9,7 +9,7 @@ const Privacy = () => {
       <header className="header _container">
         <Header />
         <div className='header__title'>
-          <h2>Политика конфиденциальности</h2>
+          <h2>Политика<wbr/> конфиден&shy;циальности</h2>
         </div>
       </header>
       <main className="main__wrapper _container">

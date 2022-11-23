@@ -28,6 +28,7 @@
       text-transform: uppercase
       color: #F7FDFC
       margin: 0
+      margin-bottom: 15px
     p
       font-family: 'RF Dewi Expanded'
       font-style: normal
@@ -37,12 +38,11 @@
       color: #F7FDFC
       opacity: 0.8
       margin: 0
-      margin-top: 16px
 .SecondaryButton
   margin-top: 48px
 .card-Image
   position: absolute
-  top: -460px
+  top: -204px
   right: -55px
 .footer__FooterContainer
   height: 530px
@@ -109,8 +109,164 @@
 .footer__LeftPart-Noise
   background-image: url(./Noise.png)
   height: 258px
-  /**width: 1920px
   position: absolute
   top: 0
-  z-index: -1
   opacity: 0.24
+.footer__button-team
+  width: 276px
+  height: 108px
+  margin-top: 46px
+@media screen and (max-width: 1600px)
+  .footer__card
+    width: 1400px
+  .card-Image
+    right: -110px
+@media screen and (max-width: 1500px)
+  .footer__card
+    width: 1300px
+@media screen and (max-width: 1420px)
+  .footer__card
+    width: 1200px
+  .footer__card-wrapper
+    .footer__card-text
+      width: 615px
+      h3
+        font-size: 35px
+@media screen and (max-width: 1300px)
+  .footer__card
+    width: 1100px
+  .card-Image
+    right: -113px
+    width: 100%
+    top: -72px
+  .footer__card-wrapper
+    .footer__card-text
+      width: 530px
+      h3
+        font-size: 32px
+@media screen and (max-width: 1200px)
+  .footer__card
+    width: 1000px
+    height: 350px
+  .card-Image
+    display: none
+  .footer__card-wrapper
+    .footer__card-text
+      width: 800px
+      h3
+        font-size: 32px
+
+@media screen and (max-width: 1100px)
+  .footer__card
+    width: 900px
+    height: 350px
+
+  .footer__FooterContainer .footer__RightPart .footer__RightPart-email .RightPart-email__p .RightPart-email
+    font-size: 28px
+  .footer__FooterContainer .footer__LeftPart .footer__LeftPart-logo
+    margin-bottom: 50px
+@media screen and (max-width: 1000px)
+  .footer__card
+    width: 800px
+    height: 380px
+  .card-Image
+  .footer__card-wrapper
+    .footer__card-text
+      width: 640px
+      h3
+        font-size: 32px
+@media screen and (max-width: 900px)
+  .footer__card
+    width: 700px
+@media screen and (max-width: 800px)
+  .footer__card
+    width: 600px
+  .footer__FooterContainer .footer__RightPart .footer__RightPart-email .RightPart-email__p .RightPart-email
+    font-size: 20px
+
+  .footer__card-wrapper
+    .footer__card-text
+      width: 500px
+      h3
+        font-size: 28px
+@media screen and (max-width: 700px)
+  .footer__card
+    width: 500px
+    height: 350px
+  .footer__button-team
+    height: 250px
+    height: 48px
+  .SecondaryButton
+    margin-top: 32px
+  .footer__card-wrapper
+    .footer__card-text
+      width: 375px
+      h3
+        font-size: 24px
+      p
+        font-size: 16px
+  .footer__card-wrapper
+    margin: 24px 32px
+  .footer__FooterContainer
+    flex-direction: column
+    margin-top: 0px
+    gap: 0px
+    align-items: center
+    height: 100%
+    .footer__LeftPart
+      margin: 0px
+    .footer__RightPart
+      margin: 0px
+      display: flex
+      flex-direction: column
+      margin-bottom: 70px
+      justify-content: center
+      align-items: center
+      margin-top: 48px
+      .footer__RightPart-email
+        display: flex
+        justify-content: center
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        margin: 0px
+        font-size: 16px
+        .RightPart-email__text
+          display: none
+      .footer__RightPart-info
+        margin-top: 16px
+  .footer__FooterContainer
+    .footer__LeftPart
+      .footer__LeftPart-info
+        a, p
+          font-size: 12px
+          line-height: 160%
+          color: #787D7D
+          text-align: center
+  .footer__FooterContainer .footer__LeftPart
+    .footer__LeftPart-logo
+      display: flex
+      justify-content: center
+      margin-top: 64px
+      margin-bottom: 48px
+      a
+        svg
+          width: 131px
+  .footer__card-wrapper .footer__card-text
+    margin: 0px auto
+@media screen and (max-width: 600px)
+  .footer__card
+    width: 400px
+    height: 420px
+  .footer__card-wrapper
+    .footer__card-text
+      width: 300px
+@media screen and (max-width: 500px)
+  .footer__card
+    width: 312px
+    height: 444px
+  .footer__card-wrapper
+    .footer__card-text
+      width: 248px
+  .privacy__2ndBlock .privacy__info-container
+    margin-bottom: 945px

@@ -1,3 +1,5 @@
+import ButtomAddTeamWhite from 'components/UIKit/button/ButtomAddTeamWhite';
+import LogoFooter from 'components/UIKit/LogoFooter/LogoFooter';
 import Logotype from 'components/UIKit/PFP/Icon/Logotype';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -17,7 +19,7 @@ const Footer = () => {
                 </h3>
                 <p>Присоединяйся к миру соревновательных игр высокого уровня на Cyper Point и выигрывай денежные призы!</p>
               
-                <div><img src='/Secondary Button.png' alt='Secondary Button' className='SecondaryButton' /></div>
+                <div className='footer__button-team'><ButtomAddTeamWhite /></div>
               </div>
               <div className='footer__card-img'>
                 <img src='/Image.png' alt='card' className='card-Image' />
@@ -41,7 +43,7 @@ const Footer = () => {
               <p className='RightPart-email__p'><a className='RightPart-email' href="mailto:info@cyber-point.ru">info@cyber-point.ru</a></p>
             </div>
             <div className='footer__RightPart-info'>
-              <img src='/Socials.png' alt='Socials' className='Socials' />
+              <LogoFooter />
             </div>
           </div>
         </div>

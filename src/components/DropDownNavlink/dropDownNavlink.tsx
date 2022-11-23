@@ -6,8 +6,8 @@ const DropDownNavlink = () => {
   return (
     <>
       <div className="dropDownNavlink__container">
-        <Link to="/NextTournaments"><p>Предстоящие</p></Link>
-        <Link to="/PreviousTournaments"><p>Прошедшие</p></Link>
+        <Link to="/NextTournaments"><p className='dropDownNavlink__p'>Предстоящие</p></Link>
+        <Link to="/PreviousTournaments"><p className='dropDownNavlink__p2'>Прошедшие</p></Link>
       </div>
     </>
   );
