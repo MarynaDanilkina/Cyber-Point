@@ -2,6 +2,8 @@ import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
 import ModalNewTeam from 'components/ModalNewTeam/modalNewTeam';
 import ButtomAddTeam from 'components/UIKit/button/buttomAddTeam';
+import CardPreviousTournament from 'components/UIKit/CardPreviousTournament/CardPreviousTournament';
+import CardUpcomingTournaments from 'components/UIKit/CardUpcomingTournaments/CardUpcomingTournaments';
 import SeeAll from 'components/UIKit/SeeAll/SeeAll';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
@@ -37,36 +39,48 @@ const Main = () => {
               <div className=' main__3dBlock-tournaments upcoming__tournaments'>
                 <div className='Block-tournaments__text'>
                   <h2>ПРЕДСТОЯЩИЕ ТУРНИРЫ</h2>
-                  <Link to="/Tournament"><SeeAll amount={'1'}/></Link>
+                  <Link to="/NextTournaments"><SeeAll title={'Смотреть все (1)'}/></Link>
                 </div>
-                <div className='Block-tournaments__cards'>
-                  <div className='Block-tournaments__card'>
-                    <Link to="/Tournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
+                <div className="container__clider">
+                  <div className='Block-tournaments__cards'>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/Tournament"><CardUpcomingTournaments date={'16.12.2022'} title={'Beast Mode #1'} price={'$ 330'} /></Link>
+                    </div>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/Tournament"><CardUpcomingTournaments/></Link>
+                    </div>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/Tournament"><CardUpcomingTournaments/></Link>
+                    </div>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/Tournament"><CardUpcomingTournaments/></Link>
+                    </div>
                   </div>
-                  <div className='Block-tournaments__card'>
-                    <Link to="/Tournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
-                  </div>
-                  <div className='Block-tournaments__card'>
-                    <Link to="/Tournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
-                  </div>
+                </div>  
                 </div>
-              </div>
+                
               <div className='main__3dBlock-tournaments past__tournaments'>
                 <div className='Block-tournaments__text'>
                   <h2>ПРОШЕДШИЕ ТУРНИРЫ</h2>
-                  <Link to="/PreviousTournaments"><SeeAll amount={'9'}/></Link>
+                  <Link to="/PreviousTournaments"><SeeAll title={'Смотреть все (9)'} /></Link>
                 </div>
-                <div className='Block-tournaments__cards bottom'>
-                  <div className='Block-tournaments__card'>
-                    <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
-                  </div>
-                  <div className='Block-tournaments__card'>
-                    <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
-                  </div>
-                  <div className='Block-tournaments__card'>
-                    <Link to="/EndedTournament"><img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard'/></Link>
-                  </div>
+                <div className="container__clider">
+                  <div className='Block-tournaments__cards bottom _container'>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/EndedTournament"><CardPreviousTournament date={'20.12.2022'} title={'CP Cup #3 - *победитель тут*'} price={'$ 745'} /></Link>
+                    </div>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/EndedTournament"><CardPreviousTournament date={'20.12.2022'} title={'CP Cup #2 - *если не помещается в одну строчку*'} price={'$ 399'} /></Link>
+                    </div>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/EndedTournament"><CardPreviousTournament date={'20.12.2022'} title={'CP Cup #1 - *победитель тут*'} price={'$ 150'} /></Link>
+                    </div>
+                    <div className='Block-tournaments__card'>
+                      <Link to="/EndedTournament"><CardPreviousTournament date={'20.12.2022'} title={'CP Cup #1 - *победитель тут*'} price={'$ 150'} /></Link>
+                    </div>
+                  </div>  
                 </div>
+      
               </div>
             </div>
           </div>

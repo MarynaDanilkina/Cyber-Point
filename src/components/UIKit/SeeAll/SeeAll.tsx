@@ -1,11 +1,11 @@
 import React from 'react';
 import './SeeAll.sass';
 
-const SeeAll= ({amount}:{amount: string}) => {
+const SeeAll= ({title}:{title: string}) => {
   return (
     <>
       <div className="seeAll__container">
-        <p>Смотреть все ({amount})</p>
+        <p>{title}</p>
         <i className='icon-ArrowRight'></i>
       </div>
     </>
