@@ -34,6 +34,7 @@
           display: flex
           justify-content: space-between
           align-items: flex-start
+          gap: 24px
         .modal__info-infoTeam
           .modal__info__title
             margin-bottom: 24px
@@ -55,6 +56,7 @@
               align-items: flex-start
               position: relative
               label
+
                 .modal__input-teams
                   width: 496px
                   border: 1px solid #505353
@@ -110,3 +112,178 @@ input:active, textarea:active
   margin: 8px 0px 0px
 .input-file
   display: none
+.label
+  position: relative
+  .while__typing
+    position: absolute
+    top: -12px
+    left: 20px
+    font-weight: 600
+    font-size: 14px
+    line-height: 160%
+    color: #46CDC4
+    padding: 0px 5px
+    background-color: #141515
+  .while__typing.err
+    color: #CD4646
+.modal__input__description
+  position: relative
+  .label__description
+    position: static
+    .while__typing
+      position: absolute
+      top: -12px
+      left: 20px
+      font-weight: 600
+      font-size: 14px
+      line-height: 160%
+      color: #46CDC4
+      padding: 0px 5px
+      background-color: #141515
+    .while__typing.err
+      color: #CD4646
+@media screen and (max-width: 1300px)
+  .modal__container
+    .modal__team
+      width: 93vw
+      .modal__info-container
+        .modal__info
+          p
+            font-size: 35px
+          img
+        .modal__form-team
+          .modal__info-logo
+            width: 85vw
+            gap: 20px
+            label
+              .logoTeams
+                width: 12vw
+              .BannerTeams
+                width: 100%
+          .modal__info-infoTeam
+            .modal__info__title
+              p
+            .modal__input-container
+              .modal__input
+                label
+                  .modal__input-teams
+                    width: 39vw
+              .modal__input__description
+                label
+                  .modal__input-teams__description
+                    width: 82vw
+            label
+              .modal__input-copy
+              .modal__input-teamsLink
+                width: 100%
+@media screen and (max-width: 1000px)
+  .modal__container
+    .modal__team
+      width: 93vw
+      .modal__info-container
+        .modal__info
+          p
+            font-size: 30px
+          img
+        .modal__form-team
+          gap: 14px
+          .modal__info-logo
+            flex-direction: column
+            label
+              .logoTeams
+                width: 260px
+              .BannerTeams
+          .modal__info-infoTeam
+            .modal__info__title
+              p
+            .modal__input-container
+              .modal__input
+                flex-direction: column
+                gap: 14px
+                label
+                  .modal__input-teams
+                    width: 82vw
+
+              .modal__input__description
+                label
+                  .modal__input-teams__description
+            label
+              .modal__input-copy
+              .modal__input-teamsLink
+                width: 82vw
+@media screen and (max-width: 600px)
+  .modal__container
+    .modal__team
+      width: 93vw
+      .modal__info-container
+        .modal__info
+          p
+            font-size: 24px
+          img
+        .modal__form-team
+          .modal__info-logo
+            align-items: center
+            label
+              .logoTeams
+                width: 80vw
+              .BannerTeams
+                width: 80vw
+          .modal__info-infoTeam
+            .modal__info__title
+              p
+                font-size: 20px
+            .modal__input-container
+              .modal__input
+                label
+                  .modal__input-teams
+              .modal__input__description
+                label
+                  .modal__input-teams__description
+            label
+              .modal__input-copy
+              .modal__input-teamsLink
+  input::placeholder
+    font-family: 'RF Dewi Expanded'
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 100%
+    color: #505353
+    text-overflow: ellipsis
+@media screen and (max-width: 500px)
+  .modal__container
+    .modal__team
+      width: 93vw
+      .modal__info-container
+        .modal__info
+          p
+            width: 200px
+          img
+        .modal__form-team
+          .modal__info-logo
+            label
+              .logoTeams
+              .BannerTeams
+          .modal__info-infoTeam
+            .modal__info__title
+              margin-top: 20px
+              margin-bottom: 17px
+              p
+                font-size: 16px
+            .modal__input-container
+              .modal__input
+                label
+                  .modal__input-teams
+              .modal__input__description
+                label
+                  .modal__input-teams__description
+            label
+              .modal__input-copy
+                svg
+                  width: 24px
+                  height: 24px
+              .modal__input-teamsLink
+@media screen and (max-width: 440px)
+  .modal__input-teamsLink::placeholder
+    text-overflow: ellipsis
+    width: 100px

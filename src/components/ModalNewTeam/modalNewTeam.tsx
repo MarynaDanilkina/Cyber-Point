@@ -18,8 +18,6 @@ const ModalNewTeam = () => {
   const dispatch = useAppDispatch();
   const { addLogoTeams, addBannerTeams, closeModalNewTeam, openModalSuccess } = reduserSlice.actions;
   function СоздатьКоманду() {
-    dispatch(openModalSuccess())
-    dispatch(closeModalNewTeam())
   }
   function Закрыть() {
     dispatch(closeModalNewTeam())
@@ -41,6 +39,7 @@ const ModalNewTeam = () => {
   const onSubmit: SubmitHandler<TeamForm> = (data) => {
     reset();
     dispatch(closeModalNewTeam())
+    dispatch(openModalSuccess())
   };
   
   return (
@@ -92,7 +91,8 @@ const ModalNewTeam = () => {
                   </div>
                   <div className='modal__input-container'>
                     <div className='modal__input'>
-                      <label>
+                    <label  className='label'>
+                      <p className='while__typing'>Название Команды</p>
                         <input
                           className="modal__input-teams" placeholder= "Название Команды"
                               {...register('TeamName', {
@@ -107,7 +107,8 @@ const ModalNewTeam = () => {
                         )}
                       </label>
                       
-                    <label>
+                    <label className='label'>
+                      <p className='while__typing err'>Тег (4 буквы)</p>
                       <input
                         className="modal__input-teams" placeholder= "Тег (4 буквы)"
                         {...register('Teg', {
@@ -125,7 +126,8 @@ const ModalNewTeam = () => {
                       
                     </div>
                   <div className='modal__input__description'>
-                    <label>
+                    <label className='label__description'>
+                      <p className='while__typing'>Описание</p>
                       <textarea
                         className="modal__input-teams__description" placeholder= "Описание"
                         {...register('Description', {
@@ -153,12 +155,14 @@ const ModalNewTeam = () => {
                     <div className='modal__input'>
                       <input
                       className="modal__input-teamsLink" placeholder= "https://cyber-point.ru/invite/teamname"
-                  
                       data-testid="name"
                       >
                       </input>
                       <div className='modal__input-copy'>
-                        <img src='/копировать.png' alt='pfp' className='pfp' />
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z" stroke="#666666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                          <path d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5" stroke="#666666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
                       </div>
                     </div>
                   </div>
