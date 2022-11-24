@@ -8,6 +8,7 @@
     flex-direction: column
     gap: 64px
     align-items: center
+    margin-bottom: 40px
     .tournament__title-info
       font-family: 'RF Dewi Expanded'
       font-style: normal
@@ -26,9 +27,13 @@
       gap: 24px
     .tournament__button-info
       margin-bottom: 127px
-      img
-  img
+  .icon-ArrowBottom
     margin-bottom: 40px
+    font-size: 24px
+  .icon-ArrowBottom:hover
+    color: #F7FDFC
+  .icon-ArrowBottom:active
+    color: #2BA199
 
 .main__tournaments
   display: flex
@@ -44,36 +49,39 @@
     flex-direction: column
     align-items: center
     margin-top: 160px
-    .main__tournament-list
-      display: flex
-      justify-content: space-between
-      max-width: 1824px
-      width: 100%
-      .tournament-list
-        max-width: 450px
+    .clider
+      width: 95vw
+      .main__tournament-list
+        display: flex
+        justify-content: center
+        max-width: 1824px
         width: 100%
-        text-align: center
-        border-bottom: 2px solid #505353
-        a
-          cursor: pointer
-          p
-            font-style: normal
-            font-weight: 700
-            font-size: 24px
-            line-height: 160%
-            color: #505353
-            margin: 0
-      .tournament-list.active
-        padding-bottom: 16px
-        border-bottom: 2px solid #46CDC4
-        a
-          cursor: default
-          p
-            font-style: normal
-            font-weight: 700
-            font-size: 24px
-            line-height: 160%
-            color: #46CDC4
+        .tournament-list
+          max-width: 23vw
+          width: 100%
+          text-align: center
+          border-bottom: 2px solid #505353
+          margin: 0px 8px
+          a
+            cursor: pointer
+            p
+              font-style: normal
+              font-weight: 700
+              font-size: 24px
+              line-height: 160%
+              color: #505353
+              margin: 0
+        .tournament-list.active
+          padding-bottom: 16px
+          border-bottom: 2px solid #46CDC4
+          a
+            cursor: default
+            p
+              font-style: normal
+              font-weight: 700
+              font-size: 24px
+              line-height: 160%
+              color: #46CDC4
 .main__tournament-pagination
   display: flex
   justify-content: center
@@ -81,3 +89,93 @@
   margin-top: 64px
   img
     margin-bottom: 950px
+@media screen and (max-width: 1100px)
+  .tournament__container-info
+    .tournament__info
+      gap: 20px
+      .tournament__Cards-container
+        flex-direction: column
+        gap: 25px
+        margin-bottom: 50px
+      .tournament__title-info
+        margin-top: 100px
+      .tournament__button-info
+        margin-bottom: 70px
+  .icon-ArrowBottom
+    display: none
+  .main__tournament .main__tournament__container .clider
+    overflow: hidden
+    margin-left: 70px
+    width: 93vw
+    height: 89px
+    .main__tournament-list
+
+  .main__tournament .main__tournament__container .clider .main__tournament-list
+    left: 0px
+    position: relative
+    width: 1160px
+    justify-content: space-between
+    .tournament-list
+      width: 450px
+      max-width: 26vw
+      margin: 0
+      a p
+        font-size: 20px
+@media screen and (max-width: 1000px)
+  .main__tournament .main__tournament__container .clider .main__tournament-list
+    left: 0px
+    position: relative
+    width: 1058px
+    justify-content: space-between
+    .tournament-list
+      width: 450px
+      max-width: 26vw
+      margin: 0
+      a p
+        font-size: 20px
+  .tournament__container-info .tournament__info .tournament__title-info
+    font-size: 56px
+@media screen and (max-width: 900px)
+  .main__tournament .main__tournament__container .clider
+    .main__tournament-list
+      width: 960px
+      .tournament-list
+        a p
+          font-size: 18px
+@media screen and (max-width: 800px)
+  .main__tournament .main__tournament__container .clider
+    .main__tournament-list
+      width: 860px
+      .tournament-list
+        a p
+          font-size: 16px
+@media screen and (max-width: 700px)
+  .main__tournament .main__tournament__container .clider
+    .main__tournament-list
+      width: 760px
+@media screen and (max-width: 600px)
+  .main__tournament .main__tournament__container .clider
+    .main__tournament-list
+      width: 750px
+  .tournament__container-info .tournament__info .tournament__title-info
+    font-size: 40px
+    margin-bottom: 48px
+  .main__tournament .main__tournament__container .clider .main__tournament-list .tournament-list
+    width: 306px
+    max-width: 30vw
+@media screen and (max-width: 500px)
+  .main__tournament .main__tournament__container .clider
+    .main__tournament-list
+      .tournament-list
+        a p
+          font-size: 14px
+  .tournament__container-info .tournament__info .tournament__Cards-container
+    gap: 16px
+    margin-bottom: 48px
+  .main__tournament .main__tournament__container .clider .main__tournament-list .tournament-list
+    width: 306px
+    max-width: 36vw
+@media screen and (max-width: 400px)
+  .main__tournament .main__tournament__container .clider .main__tournament-list .tournament-list
+    width: 306px
+    max-width: 46vw

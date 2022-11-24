@@ -2,6 +2,7 @@ import Card from 'components/Card/card';
 import CardTournaments from 'components/CardTournaments/CardTournaments';
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
+import ButtomAddTeam from 'components/UIKit/button/buttomAddTeam';
 import React from 'react';
 import './EndedTournament.sass';
 
@@ -20,37 +21,40 @@ const EndedTournament = () => {
               <Card title={'Вступительные:'} info={'$ 15'} />
             </div>
             <div className="tournament__button-info">
-              <img src='/турникОкончен.png' alt='pfp' className='pfp'/>
+              <ButtomAddTeam title={'Турнир окончен'} disabled={true} />
             </div>
           </div>
-          <img src='/свернуть.png' alt='pfp' className='pfp'/>
+          <i className='icon-ArrowBottom'/>
         </div>
       </header>
       <main>
         <div className='main__tournament'>
           <div className="main__tournament__container">
-            <div className="main__tournament-list">
-              <div className="tournament-list">
-                <a>
-                  <p>Отборочный Тур</p>
-                </a>
-              </div>
-              <div className="tournament-list">
-                <a>
-                  <p>1/3 Финала</p>
-                </a>
-              </div>
-              <div className="tournament-list">
-                <a>
-                  <p>Полу-финал</p>
-                </a>
-              </div>
-              <div className="tournament-list active">
-                <a>
-                  <p>Финал</p>
-                </a>
+            <div className="clider">
+              <div className="main__tournament-list">
+                <div className="tournament-list">
+                  <a>
+                    <p>Отборочный Тур</p>
+                  </a>
+                </div>
+                <div className="tournament-list">
+                  <a>
+                    <p>1/3 Финала</p>
+                  </a>
+                </div>
+                <div className="tournament-list">
+                  <a>
+                    <p>Полу-финал</p>
+                  </a>
+                </div>
+                <div className="tournament-list active">
+                  <a>
+                    <p>Финал</p>
+                  </a>
+                </div>
               </div>
             </div>
+            
             <div className="main__ended-tournaments">
               <div className="ended__tournament__container">
                 <div className="ended__tournament victory">

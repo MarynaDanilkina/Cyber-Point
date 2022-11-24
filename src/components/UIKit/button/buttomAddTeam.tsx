@@ -1,11 +1,11 @@
 import React from 'react';
 import './buttomAddTeam.sass';
 
-const ButtomAddTeam = () => {
+const ButtomAddTeam = ({title= 'Создать команду', disabled= false}) => {
   return (
     <>
-      <button className='button'>
-        <p className='button__p'>Создать команду</p>
+      <button className='button' disabled={disabled}>
+        <p className='button__p'>{title}</p>
       </button>
     </>
   );

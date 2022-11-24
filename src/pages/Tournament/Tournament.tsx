@@ -23,34 +23,37 @@ const Tournament = () => {
               <img src='/записать команду.png' alt='pfp' className='pfp'/>
             </div>
           </div>
-          <img src='/свернуть.png' alt='pfp' className='pfp'/>
+          <i className='icon-ArrowBottom'/>
         </div>
       </header>
       <main>
         <div className='main__tournament'>
           <div className="main__tournament__container">
-            <div className="main__tournament-list">
-              <div className="tournament-list active">
-                <a>
-                  <p>Отборочный Тур</p>
-                </a>
-              </div>
-              <div className="tournament-list">
-                <a>
-                  <p>1/3 Финала</p>
-                </a>
-              </div>
-              <div className="tournament-list">
-                <a>
-                  <p>Полу-финал</p>
-                </a>
-              </div>
-              <div className="tournament-list">
-                <a>
-                  <p>Финал</p>
-                </a>
+            <div className="clider">
+              <div className="main__tournament-list">
+                <div className="tournament-list active">
+                  <a>
+                    <p>Отборочный Тур</p>
+                  </a>
+                </div>
+                <div className="tournament-list">
+                  <a>
+                    <p>1/3 Финала</p>
+                  </a>
+                </div>
+                <div className="tournament-list">
+                  <a>
+                    <p>Полу-финал</p>
+                  </a>
+                </div>
+                <div className="tournament-list">
+                  <a>
+                    <p>Финал</p>
+                  </a>
+                </div>
               </div>
             </div>
+            
             <div className="main__tournaments">
               <CardTournaments team1={'Название Команды'} team2={'Название Команды'} />
               <CardTournaments team1={'Название Команды'} team2={'Название Команды'} />

@@ -20,12 +20,10 @@
       align-items: center
       flex-direction: column
       p
-        font-style: normal
         font-weight: 700
         font-size: 24px
         line-height: 160%
       h2
-        font-style: normal
         font-weight: 700
         font-size: 40px
         line-height: 150%
@@ -34,11 +32,69 @@
         margin: 0
     .ended__tournament-VS
       p
-        font-family: 'RF Dewi Expanded'
-        font-style: normal
         font-weight: 700
         font-size: 32px
         line-height: 150%
         text-transform: uppercase
         color: #505353
         margin: 0
+.tournament__button-info
+  width: 260px
+  .button
+    padding: 15px 0px
+    .button__p
+@media screen and (max-width: 1000px)
+  .main__ended-tournaments
+    .ended__tournament__container
+      gap: 65px
+      margin-top: 160px
+      margin-bottom: 950px
+      .ended__tournament
+        p
+          font-size: 20px //16
+          line-height: 160%
+        h2
+          font-size: 36px //24
+          line-height: 150%
+      .ended__tournament-VS
+        p
+          font-size: 28px //24
+          line-height: 150%
+@media screen and (max-width: 900px)
+  .main__ended-tournaments
+    .ended__tournament__container
+      flex-direction: column
+      gap: 20px
+      margin-top: 110px
+      margin-bottom: 800px
+@media screen and (max-width: 700px)
+  .main__ended-tournaments
+    .ended__tournament__container
+      margin-bottom: 930px
+      .ended__tournament
+        p
+          font-size: 18px //16
+          line-height: 160%
+        h2
+          font-size: 30px //24
+          line-height: 150%
+      .ended__tournament-VS
+        p
+          font-size: 26px //24
+          line-height: 150%
+@media screen and (max-width: 500px)
+  .main__ended-tournaments
+    .ended__tournament__container
+      margin-bottom: 930px
+      margin-top: 48px
+      .ended__tournament
+        p
+          font-size: 16px //16
+          line-height: 160%
+        h2
+          font-size: 24px //24
+          line-height: 150%
+      .ended__tournament-VS
+        p
+          font-size: 24px //24
+          line-height: 150%
