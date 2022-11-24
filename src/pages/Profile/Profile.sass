@@ -55,3 +55,51 @@
   gap: 24px
 .profile__exit-faceit:hover
   cursor: pointer
+.tournament__Cards-container
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0px auto 0px
+  gap: 24px
+.edit:hover
+  cursor: pointer
+  stroke: var(--hoverColor)
+.edit
+  stroke: var(--restColor)
+.edit:active
+  stroke: var(--activeColor)
+.profile__exit-faceit:hover p
+  color: var(--hoverColor)
+.profile__exit-faceit:active p
+  color: var(--activeColor)
+
+@media screen and (max-width: 1100px)
+  .profile__container
+    margin: 70px auto 0px
+  .Cards__container
+    flex-direction: column
+    gap: 25px
+    margin-bottom: 960px
+  .profile__container .profile__title-container .profile__title__wrapper img
+    width: 200px
+    height: 200px
+@media screen and (max-width: 500px)
+  .Cards__container
+    gap: 16px
+    margin-bottom: 995px
+  .profile__container
+    margin: 24px auto 0px
+  .profile__container .profile__title-container .profile__title__wrapper img
+    width: 162px
+    height: 162px
+@media screen and (max-width: 900px)
+  .profile__container .profile__title-container .profile__title__wrapper .profile__titles .profile__title .profile__title-h3
+    font-size: 50px
+@media screen and (max-width: 600px)
+  .profile__container .profile__title-container .profile__title__wrapper .profile__titles .profile__title .profile__title-h3
+    font-size: 40px
+@media screen and (max-width: 450px)
+  .profile__container .profile__title-container .profile__title__wrapper .profile__titles .profile__title .profile__title-h3
+    font-size: 24px
+  .profile__exit-faceitExit
+    display: none

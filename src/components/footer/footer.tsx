@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className='footer__button-team'><ButtomAddTeamWhite /></div>
               </div>
               <div className='footer__card-img'>
-                <img src='/Image.png' alt='card' className='card-Image' />
+                <img src='/machine.png' alt='machine' className='machine' />
               </div>
             </div>
           </div>

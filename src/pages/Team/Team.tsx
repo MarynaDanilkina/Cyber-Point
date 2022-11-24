@@ -2,6 +2,7 @@ import Card from 'components/Card/card';
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
 import ModalExit from 'components/modalExit/modalExit';
+import Edit from 'components/UIKit/edit/edit';
 import PFP from 'components/UIKit/PFP/PFP';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
@@ -31,8 +32,8 @@ const Team = () => {
               </div>
               <div className="profile-team__titles">
                 <div className="profile__title">
-                  <h3 className='profile__title-h3'>(CBPT) Cyber-Point Team</h3>
-                  <img src='/редактировать.png' alt='pfp' className='pfp'/>
+                  <h3 className='profile__title-h3'>(CBPT)&shy; Cyber-Point Team</h3>
+                  <Edit/>
                 </div>
                 <div className="profile__exit-faceit__container">
                   <div className="profile__team">

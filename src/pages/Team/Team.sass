@@ -38,7 +38,7 @@
         position: relative
         .profile-team-banner
           img
-            width: 1920px
+            width: 100vw
             height: 260px
         .pfp
           width: 128px
@@ -87,3 +87,81 @@
   align-items: center
   margin: 0px auto 925px
   gap: 24px
+
+@media screen and (max-width: 1250px)
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles .profile__title
+    .profile__title-h3
+      font-size: 55px
+@media screen and (max-width: 1100px)
+  .Cards-team__container
+    flex-direction: column
+    gap: 25px
+    margin-bottom: 960px
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles
+    .profile__title
+      .profile__title-h3
+        font-size: 50px
+    .profile__exit-faceit__container
+      .profile__team
+        p
+          font-size: 14px
+@media screen and (max-width: 1100px)
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles
+    .profile__title
+      .profile__title-h3
+        font-size: 40px
+@media screen and (max-width: 850px)
+  .profile-team__container .profile__title-container .profile__title__wrapper
+    .profile-team__titles
+      padding: 0px 20px
+      text-align: center
+      .profile__title
+        position: relative
+        .profile__title-h3
+          font-size: 35px//24
+          width: 600px
+        svg
+          position: absolute
+          right: 17px
+          top: 10px
+      .profile__exit-faceit__container
+        .profile__team
+          p
+            font-size: 12px
+@media screen and (max-width: 700px)
+  .profile-team__container .profile__title-container .profile__title__wrapper
+    .profile-team__titles
+      padding: 0px 20px
+      text-align: center
+      .profile__title
+        position: relative
+        .profile__title-h3
+          font-size: 35px//24
+          width: 400px
+        svg
+          position: absolute
+          right: -10px
+          top: 10px
+      .profile__exit-faceit__container
+        .profile__team
+          p
+            font-size: 12px
+@media screen and (max-width: 500px)
+  .Cards-team__container
+    gap: 16px
+    margin-bottom: 995px
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team .profile-team-banner img
+    height: 200px
+  .profile-team__container .profile__title-container .profile__title__wrapper
+    .profile-team__titles
+      .profile__title
+        .profile__title-h3
+          font-size: 24px
+          width: 312px
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles .profile__exit-faceit__container .profile__team p
+    width: 312px
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team .pfp
+    width: 98px
+    height: 98px
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles
+    margin-top: 64px

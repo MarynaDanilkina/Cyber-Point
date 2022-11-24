@@ -19,6 +19,7 @@
       color: #F7FDFC
       margin: 0
       margin-top: 235px
+      word-wrap: break-word
     .tournament__Cards-container
       display: flex
       justify-content: center
@@ -87,8 +88,13 @@
   justify-content: center
   align-items: center
   margin-top: 64px
-  img
+  .pagination__container
     margin-bottom: 950px
+.tournament__container-info.Tournament
+  .tournament__info
+    .tournament__button-info
+      width: 368px
+
 @media screen and (max-width: 1100px)
   .tournament__container-info
     .tournament__info
@@ -105,9 +111,9 @@
     display: none
   .main__tournament .main__tournament__container .clider
     overflow: hidden
-    margin-left: 70px
+    margin-left: 40px
     width: 93vw
-    height: 89px
+    height: 100px
     .main__tournament-list
 
   .main__tournament .main__tournament__container .clider .main__tournament-list
@@ -115,44 +121,50 @@
     position: relative
     width: 1160px
     justify-content: space-between
-    .tournament-list
+    .tournament-list, .tournament-list.active
       width: 450px
       max-width: 26vw
       margin: 0
       a p
         font-size: 20px
+    .tournament-list.active
 @media screen and (max-width: 1000px)
   .main__tournament .main__tournament__container .clider .main__tournament-list
     left: 0px
     position: relative
     width: 1058px
     justify-content: space-between
-    .tournament-list
+    .tournament-list, .tournament-list.active
       width: 450px
       max-width: 26vw
       margin: 0
       a p
         font-size: 20px
+    .tournament-list.active
   .tournament__container-info .tournament__info .tournament__title-info
     font-size: 56px
 @media screen and (max-width: 900px)
   .main__tournament .main__tournament__container .clider
     .main__tournament-list
       width: 960px
-      .tournament-list
+      .tournament-list, .tournament-list.active
         a p
           font-size: 18px
+      .tournament-list.active
 @media screen and (max-width: 800px)
   .main__tournament .main__tournament__container .clider
     .main__tournament-list
       width: 860px
-      .tournament-list
+      .tournament-list, .tournament-list.active
         a p
           font-size: 16px
+      .tournament-list.active
 @media screen and (max-width: 700px)
   .main__tournament .main__tournament__container .clider
     .main__tournament-list
       width: 760px
+  .tournament__container-info .tournament__info .tournament__title-info
+    font-size: 48px
 @media screen and (max-width: 600px)
   .main__tournament .main__tournament__container .clider
     .main__tournament-list
@@ -160,22 +172,79 @@
   .tournament__container-info .tournament__info .tournament__title-info
     font-size: 40px
     margin-bottom: 48px
-  .main__tournament .main__tournament__container .clider .main__tournament-list .tournament-list
-    width: 306px
-    max-width: 30vw
+    width: 351px
+    text-align: center
+  .main__tournament .main__tournament__container .clider .main__tournament-list
+    .tournament-list
+      width: 306px
+      max-width: 30vw
+    .tournament-list.active
 @media screen and (max-width: 500px)
   .main__tournament .main__tournament__container .clider
     .main__tournament-list
-      .tournament-list
+      .tournament-list, .tournament-list.active
         a p
           font-size: 14px
+      .tournament-list.active
+  .tournament__container-info.Tournament
+    .tournament__info
+      .tournament__button-info
+        width: 315px
   .tournament__container-info .tournament__info .tournament__Cards-container
     gap: 16px
     margin-bottom: 48px
-  .main__tournament .main__tournament__container .clider .main__tournament-list .tournament-list
-    width: 306px
-    max-width: 36vw
+  .main__tournament .main__tournament__container .clider .main__tournament-list
+    .tournament-list, .tournament-list.active
+      width: 306px
+      max-width: 36vw
+    .tournament-list.active
+  .tournament__container-info.Tournament
+  .tournament__info
+    .tournament__button-info
+      width: 320px
 @media screen and (max-width: 400px)
-  .main__tournament .main__tournament__container .clider .main__tournament-list .tournament-list
-    width: 306px
-    max-width: 46vw
+  .main__tournament .main__tournament__container .clider .main__tournament-list
+    .tournament-list, .tournament-list.active
+      width: 306px
+      max-width: 46vw
+    .tournament-list.active
+  .tournament__container-info .tournament__info .tournament__title-info
+    font-size: 32px
+    width: 322px
+    margin-top: 120px
+    margin-bottom: 30px
+  .main__tournament .main__tournament__container .clider
+    height: 58px
+  .main__tournaments
+    margin-top: 30px
+  .Card-Tournaments__container .Card-Tournaments
+    height: 9px
+  .main__tournament-pagination .pagination__container
+    margin-bottom: 1000px
+
+@media screen and (max-width: 1900px)
+  .main__tournaments
+    width: 95vw
+@media screen and (max-width: 1400px)
+  .main__tournaments
+    flex-direction: column
+    width: 70vw
+  .Card-Tournaments__container
+    width: 70vw
+@media screen and (max-width: 1000px)
+  .Card-Tournaments__container
+    flex-direction: column
+    gap: 8px
+  .main__tournaments
+    gap: 48px
+  .Card-Tournaments__container .Card-Tournaments
+    width: 40vw
+@media screen and (max-width: 600px)
+  .Card-Tournaments__container
+    flex-direction: column
+    gap: 8px
+    width: 95vw
+  .main__tournaments
+    width: 95vw
+  .Card-Tournaments__container .Card-Tournaments
+    width: 65vw

@@ -3,6 +3,7 @@ import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
 import ModalExit from 'components/modalExit/modalExit';
 import ModalFaceit from 'components/modalFaceit/modalFaceit';
+import Edit from 'components/UIKit/edit/edit';
 import PFP from 'components/UIKit/PFP/PFP';
 import { useAppDispatch, useAppSelector } from 'interface/interface';
 import React from 'react';
@@ -30,11 +31,11 @@ const Profile = () => {
               <div className="profile__titles">
                 <div className="profile__title">
                   <h3 className='profile__title-h3'>itsgeorge</h3>
-                  <img src='/редактировать.png' alt='pfp' className='pfp'/>
+                  <Edit/>
                 </div>
                 <div className="profile__exit-faceit__container">
-                  <div className="profile__exit-faceit" onClick={() => Выйти()}>
-                    <p>Выйти</p>
+                  <div className="profile__exit-faceit profile__exit-faceitExit" onClick={() => Выйти()}>
+                    <p className='profile__exit'>Выйти</p>
                   </div>
                   <div className="profile__exit-faceit" onClick={() => МодалкаFaceit()}>
                     <p>{userFaceit? 'Faceit Профиль' : 'Привязать Faceit' }</p>
@@ -43,6 +44,7 @@ const Profile = () => {
               </div>
             </div>
           </div>
+
           <div className='Cards__container'>
             <Card title={'Команда:'} info={'CBPT'} />
             <Card title={'Сыграно Турниров:'} info={'12'} />

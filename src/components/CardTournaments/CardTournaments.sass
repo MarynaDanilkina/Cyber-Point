@@ -6,8 +6,9 @@
   justify-content: center
   align-items: center
   gap: 24px
+  width: 46vw
   .Card-Tournaments
-    width: 343px
+    width: 17vw
     height: 25px
     border: 2px solid #505353
     border-radius: 4px
@@ -38,7 +39,7 @@
       color: #505353
       margin: 0
 .Card-Tournaments.victory
-  width: 343px
+  width: 17vw
   height: 25px
   border: 2px solid #46CDC4
   border-radius: 4px
@@ -47,7 +48,7 @@
   align-items: center
   padding: 24px
 .Card-Tournaments.defeat
-  width: 343px
+  width: 17vw
   height: 25px
   border: 2px solid #CD4646
   border-radius: 4px
@@ -56,3 +57,19 @@
   justify-content: center
   align-items: center
   padding: 24px
+@media screen and (max-width: 1400px)
+
+  .Card-Tournaments__container.empty
+  .Card-Tournaments__container
+    .Card-Tournaments
+      width: 26vw
+      .Card-Tournaments-team
+    .Card-Tournaments-VS
+      .Card-Tournaments-VS
+  .Card-Tournaments.victory
+    width: 26vw
+  .Card-Tournaments.defeat
+    width: 26vw
+@media screen and (max-width: 400px)
+  .Card-Tournaments__container .Card-Tournaments-VS .Card-Tournaments-VS
+    font-size: 16px

@@ -2,6 +2,8 @@ import Card from 'components/Card/card';
 import CardTournaments from 'components/CardTournaments/CardTournaments';
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
+import Pagination from 'components/Pagination/Pagination';
+import ButtomAddTeam from 'components/UIKit/button/buttomAddTeam';
 import React from 'react';
 import './Tournament.sass';
 
@@ -10,7 +12,7 @@ const Tournament = () => {
     <>
       <header className="header _container">
         <Header />
-        <div className="tournament__container-info">
+        <div className="tournament__container-info Tournament">
           <div className="tournament__info">
             <h2 className="tournament__title-info">Beast Mode #1</h2>
             <div className='tournament__Cards-container'>
@@ -20,7 +22,7 @@ const Tournament = () => {
               <Card title={'Вступительные:'} info={'$ 3'} />
             </div>
             <div className="tournament__button-info">
-              <img src='/записать команду.png' alt='pfp' className='pfp'/>
+              <ButtomAddTeam title={'Записать команду за $ 15'} />
             </div>
           </div>
           <i className='icon-ArrowBottom'/>
@@ -74,7 +76,7 @@ const Tournament = () => {
             </div>
           </div>
           <div className="main__tournament-pagination">
-            <img src='/Pagination.png' alt='pfp' className='pfp'/>
+            <Pagination />
           </div>
         </div>
       </main>
