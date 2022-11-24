@@ -21,7 +21,9 @@ const Participant= ({name = 'ItsGeorge', title='Игрок' }) => {
           </div>
         </div>
         <div className="modal__info-team__close">
-          <img src='/Icons.png' alt='pfp' className='pfp'/>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" className='pfp'>
+            <path d="M1.00001 21L21 1M1 1L21 21" stroke="#505353" strokeWidth="1.5" strokeLinecap="round"/>
+          </svg>
         </div>
       </div>
     </>

@@ -20,3 +20,39 @@ h3, h2, h1, p, li, ul
   font-style: normal
   margin: 0
   margin: 0
+.highlight1
+  position: absolute
+  width: 879px
+  height: 879px
+  background: #46CDC4
+  opacity: 0.32
+  filter: blur(160px)
+  z-index: 0
+  bottom: -320px
+  right: -160px
+  animation: effect 5s infinite
+@keyframes effect
+  from
+    bottom: -1500px
+    right: -160px
+
+  to
+    bottom: 1500px
+    right: -160px
+.highlight2
+  position: absolute
+  width: 1199px
+  height: 640px
+  background: #46CDC4
+  opacity: 0.32
+  filter: blur(160px)
+  transform: rotate(15deg)
+  animation: effect2 5s infinite
+@keyframes effect2
+  from
+    bottom: 1500px
+    left: -460px
+
+  to
+    bottom: -1500px
+    left: -460px

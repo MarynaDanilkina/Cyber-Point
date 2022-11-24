@@ -23,12 +23,13 @@
       margin: 0px 48px 40px
   .main__info-container
     background: #141515
-    background-image: url(./Background2.png)
     background-position: center
     height: 1080px
     display: flex
     justify-content: center
     align-items: center
+    overflow: hidden
+    position: relative
     .main__info-container-text
       font-family: 'RF Dewi Expanded'
       font-style: normal
@@ -46,10 +47,10 @@
       display: flex
       justify-content: center
       align-items: center
-      margin: 160px 0px 0px
       flex-direction: column
       gap: 160px
-      padding: 0px 48px
+      padding: 160px 48px
+      z-index: 10
       .main__3dBlock-tournaments
         .Block-tournaments__text
           display: flex
