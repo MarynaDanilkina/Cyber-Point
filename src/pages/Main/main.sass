@@ -5,6 +5,8 @@
     display: flex
     align-items: flex-end
     justify-content: space-between
+    width: 100%
+    background-position: center
     .main__Headline1
       color: #46CDC4
     .main__video-container__text
@@ -37,6 +39,7 @@
       color: #F7FDFC
       margin: 0
       max-width: 1516px
+      padding: 0px 20px
   .main__3dBlock
     background-image: url(./Noise1.png)
     .main__3dBlock__container
@@ -70,13 +73,227 @@
           gap: 32px
           a
             .card-Upcomingtournaments__container
-              width: 592px
+              width: 30.7vw
             .card-Previoustournaments__container
-              width: 592px
+              width: 30.7vw
               .card-tournaments
                 padding: 0px
         .Block-tournaments__cards.bottom
           margin-bottom: 955px
 .container__clider
   overflow: hidden
-  max-width: 1824px
+  width: 95vw
+  height: 420px
+@media screen and (max-width: 1500px)
+  .main__wrapper
+    .main__video-container
+      .main__Headline1
+      .main__video-container__text
+      .main__button
+    .main__info-container
+      .main__info-container-text
+    .main__3dBlock
+      .main__3dBlock__container
+        .main__3dBlock-tournaments
+          .Block-tournaments__text
+            h2
+              font-size: 58px
+            a
+          .Block-tournaments__cards
+            a
+              .card-Upcomingtournaments__container
+              .card-Previoustournaments__container
+                .card-tournaments
+          .Block-tournaments__cards.bottom
+@media screen and (max-width: 1400px)
+  .main__wrapper
+    .main__video-container
+      height: 800px
+      .main__Headline1
+      .main__video-container__text
+        font-size: 36px
+        width: 776px
+      .main__button
+    .main__info-container
+      height: 800px
+      .main__info-container-text
+        font-size: 28px
+        padding: 0px 117px
+    .main__3dBlock
+      .main__3dBlock__container
+        .main__3dBlock-tournaments
+          .Block-tournaments__text
+            h2
+              font-size: 46px
+            a
+          .Block-tournaments__cards
+            position: relative
+            left: 0px
+            width: 1760px
+            a
+              .card-Upcomingtournaments__container
+                width: 416px
+              .card-Previoustournaments__container
+                width: 416px
+                .card-tournaments
+          .Block-tournaments__cards.bottom
+@media screen and (max-width: 1100px)
+  .main__wrapper
+    .main__video-container
+      height: 800px
+      .main__Headline1
+      .main__video-container__text
+        font-size: 36px//32
+        width: 776px
+      .main__button
+    .main__info-container
+      height: 800px
+      .main__info-container-text
+        font-size: 28px //20
+        padding: 0px 117px
+    .main__3dBlock
+      .main__3dBlock__container
+        margin-top: 90px
+        gap: 90px
+        .main__3dBlock-tournaments
+          .Block-tournaments__text
+            h2
+              font-size: 34px//24
+            a
+          .Block-tournaments__cards
+            position: relative
+            left: 0px
+            width: 1760px
+            a
+              .card-Upcomingtournaments__container
+                width: 416px
+                height: 320px
+                .card-tournaments
+                  .card-tournaments__top-container
+                    height: 225px
+              .card-Previoustournaments__container
+                width: 416px
+                height: 320px
+                .card-tournaments
+                  .card-tournaments__top-container
+                    height: 225px
+          .Block-tournaments__cards.bottom
+@media screen and (max-width: 900px)
+  .main__wrapper
+    .main__video-container
+      background: url()
+      flex-direction: column
+      height: 100%
+      gap: 80px
+      align-items: center
+      .main__Headline1
+      .main__video-container__text
+        margin: 0
+        margin-top: 200px
+        width: 80vw
+      .main__button
+    .main__info-container
+      height: 100%
+      margin-top: 200px
+      margin-bottom: 200px
+      font-size: 24px //20
+      .main__info-container-text
+    .main__3dBlock
+      .main__3dBlock__container
+        padding: 0px 24px
+        .main__3dBlock-tournaments
+          .Block-tournaments__text
+            flex-direction: column
+            align-items: flex-start
+            h2
+              font-size: 34px//24
+            a
+          .Block-tournaments__cards
+            a
+              .card-Upcomingtournaments__container
+              .card-Previoustournaments__container
+                .card-tournaments
+          .Block-tournaments__cards.bottom
+@media screen and (max-width: 640px)
+  .main__wrapper
+    .main__video-container
+      .main__Headline1
+      .main__video-container__text
+        font-size: 32px
+      .main__button
+    .main__info-container
+      .main__info-container-text
+        font-size: 24px
+        padding: 0px 24px
+    .main__3dBlock
+      .main__3dBlock__container
+        gap: 66px
+        margin-top: 267px
+        .main__3dBlock-tournaments
+          .Block-tournaments__text
+            h2
+              font-size: 24px
+            a
+              div
+                p
+                  margin-top: 5px
+                  font-size: 16px
+          .Block-tournaments__cards
+            width: 798px
+            margin-top: 37px
+            a
+              .card-Upcomingtournaments__container
+                width: 280px
+                height: 320px
+                .card-tournaments
+                  margin: 4px 13px
+                  .card-tournaments__top-container
+                    height: 263px
+                    .card-tournaments__top-title-container
+                      .card-tournaments__title
+                        p
+                          font-size: 16px
+              .card-Previoustournaments__container
+                width: 280px
+                height: 320px
+                .card-tournaments
+                  margin: 4px 13px
+                  .card-tournaments__top-container
+                    height: 263px
+                    .card-tournaments__top-title-container
+                      .card-tournaments__title
+                        p
+                          font-size: 16px
+          .container__clider
+            width: 87vw
+            .Block-tournaments__cards.bottom
+        .main__3dBlock-tournaments.past__tournaments
+          margin-bottom: 932px
+@media screen and (max-width: 500px)
+  .main__wrapper
+    .main__video-container
+      gap: 48px
+      .main__Headline1
+      .main__video-container__text
+        margin-top: 120px
+        width: 87vw
+      .main__button
+        margin: 0px 10px 10px
+        .button
+          padding: 16px 48px
+    .main__info-container
+      .main__info-container-text
+        font-size: 20px
+    .main__3dBlock
+      .main__3dBlock__container
+
+        .main__3dBlock-tournaments
+          .Block-tournaments__text
+            h2
+            a
+          .Block-tournaments__cards
+            a
+              .card-Upcomingtournaments__container
+              .card-Previoustournaments__container
+                .card-tournaments
+          .Block-tournaments__cards.bottom

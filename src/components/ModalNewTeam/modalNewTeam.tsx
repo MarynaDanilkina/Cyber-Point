@@ -16,9 +16,10 @@ export interface TeamForm {
 }
 const ModalNewTeam = () => {
   const dispatch = useAppDispatch();
-  const { closeModalFaceit, login } = reduserSlice.actions;
-  const { addLogoTeams, addBannerTeams, closeModalNewTeam } = reduserSlice.actions;
+  const { addLogoTeams, addBannerTeams, closeModalNewTeam, openModalSuccess } = reduserSlice.actions;
   function СоздатьКоманду() {
+    dispatch(openModalSuccess())
+    dispatch(closeModalNewTeam())
   }
   function Закрыть() {
     dispatch(closeModalNewTeam())

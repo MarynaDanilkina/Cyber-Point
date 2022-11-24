@@ -1,6 +1,7 @@
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
 import ModalNewTeam from 'components/ModalNewTeam/modalNewTeam';
+import ModalSuccess from 'components/ModalSuccess/ModalSuccess';
 import ButtomAddTeam from 'components/UIKit/button/buttomAddTeam';
 import CardPreviousTournament from 'components/UIKit/CardPreviousTournament/CardPreviousTournament';
 import CardUpcomingTournaments from 'components/UIKit/CardUpcomingTournaments/CardUpcomingTournaments';
@@ -12,7 +13,7 @@ import { reduserSlice } from 'reduxStore/Reducer';
 import './main.sass';
 
 const Main = () => {
-  const { modalTeamNew } = useAppSelector((state) => state);
+  const { modalTeamNew, modalSuccess } = useAppSelector((state) => state);
   const { openModalNewTeam } = reduserSlice.actions;
   const dispatch = useAppDispatch();
   function СоздатьКоманду() {
@@ -87,7 +88,8 @@ const Main = () => {
         </div>
       </main>
       <Footer />
-      { modalTeamNew ? <ModalNewTeam /> : null }
+      {modalTeamNew ? <ModalNewTeam /> : null}
+      {modalSuccess? <ModalSuccess /> : null}
     </>
     
   );

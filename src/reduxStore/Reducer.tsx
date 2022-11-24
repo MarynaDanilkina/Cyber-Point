@@ -5,6 +5,7 @@ export type IInitialState = {
   modalDiscord: boolean;
   modalFaceit: boolean;
   modalTeamNew: boolean;
+  modalSuccess: boolean;
   modalExit: boolean;
   LogoTeams: string;
   BanerTeams: string;
@@ -16,6 +17,7 @@ export const initialState: IInitialState = {
   modalFaceit: false,
   modalTeamNew: false,
   modalExit: false,
+  modalSuccess: false,
   LogoTeams: '/logoTeamNew.png',
   BanerTeams: '/Banner.png',
 };
@@ -63,6 +65,12 @@ export const reduserSlice = createSlice({
     addBannerTeams(state, action) {
       state.BanerTeams = action.payload;
     },
+    openModalSuccess(state) {
+      state.modalSuccess = true;
+    },
+    closeModalSuccess(state) {
+      state.modalSuccess = false;
+    }
   },
 });
 export default reduserSlice.reducer;
