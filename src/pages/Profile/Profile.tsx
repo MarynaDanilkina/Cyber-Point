@@ -1,6 +1,7 @@
 import Card from 'components/Card/card';
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
+import ModalEditProfile from 'components/ModalEditProfile/ModalEditProfile';
 import ModalExit from 'components/modalExit/modalExit';
 import ModalFaceit from 'components/modalFaceit/modalFaceit';
 import Edit from 'components/UIKit/edit/edit';
@@ -11,14 +12,17 @@ import { reduserSlice } from 'reduxStore/Reducer';
 import './Profile.sass';
 
 const Profile = () => {
-  const { modalExit, modalFaceit, userFaceit } = useAppSelector((state) => state);
-  const { openModalFaceit, openModalExit } = reduserSlice.actions;
+  const { modalExit, modalFaceit, userFaceit, modalEditProfile } = useAppSelector((state) => state);
+  const { openModalFaceit, openModalExit, openModalEditProfile } = reduserSlice.actions;
   const dispatch = useAppDispatch();
   function Выйти() {
     dispatch(openModalExit())
   }
   function МодалкаFaceit() {
     dispatch(openModalFaceit())
+  }
+  function РедактироватьПрофиль() {
+    dispatch(openModalEditProfile())
   }
   return (
     <>
@@ -31,7 +35,7 @@ const Profile = () => {
               <div className="profile__titles">
                 <div className="profile__title">
                   <h3 className='profile__title-h3'>itsgeorge</h3>
-                  <Edit/>
+                  <div onClick={() => РедактироватьПрофиль()}><Edit /></div>
                 </div>
                 <div className="profile__exit-faceit__container">
                   <div className="profile__exit-faceit profile__exit-faceitExit" onClick={() => Выйти()}>
@@ -55,6 +59,7 @@ const Profile = () => {
       </header>
       {modalExit ? <ModalExit /> : null}
       {modalFaceit ? <ModalFaceit /> : null}
+      {modalEditProfile? <ModalEditProfile /> : null}
       <Footer />
     </>
     

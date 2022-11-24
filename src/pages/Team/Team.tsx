@@ -1,6 +1,7 @@
 import Card from 'components/Card/card';
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
+import ModalEditTeam from 'components/ModalEditTeam/ModalEditTeam';
 import ModalExit from 'components/modalExit/modalExit';
 import Edit from 'components/UIKit/edit/edit';
 import PFP from 'components/UIKit/PFP/PFP';
@@ -11,11 +12,14 @@ import './Team.sass';
 
 const Team = () => {
   const { BanerTeams } = useAppSelector((state) => state);
-  const { modalExit } = useAppSelector((state) => state);
-  const { openModalExit } = reduserSlice.actions;
+  const { modalExit, modalEditTeam } = useAppSelector((state) => state);
+  const { openModalExit, openmodalEditTeam } = reduserSlice.actions;
   const dispatch = useAppDispatch();
   function Выйти() {
     dispatch(openModalExit())
+  }
+  function РедактироватьПрофиль() {
+    dispatch(openmodalEditTeam())
   }
   return (
     <>
@@ -33,7 +37,7 @@ const Team = () => {
               <div className="profile-team__titles">
                 <div className="profile__title">
                   <h3 className='profile__title-h3'>(CBPT)&shy; Cyber-Point Team</h3>
-                  <Edit/>
+                  <div onClick={() => РедактироватьПрофиль()}><Edit /></div>
                 </div>
                 <div className="profile__exit-faceit__container">
                   <div className="profile__team">
@@ -53,6 +57,7 @@ const Team = () => {
         </div>
       </header>
       {modalExit ? <ModalExit /> : null}
+      {modalEditTeam? <ModalEditTeam /> : null}
       <Footer />
     </>
     

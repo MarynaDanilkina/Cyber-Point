@@ -50,6 +50,7 @@
             display: flex
             gap: 24px
             flex-direction: column
+
             .modal__input
               display: flex
               justify-content: space-between
@@ -62,6 +63,21 @@
                   border: 1px solid #505353
                   border-radius: 4px
                   background-color: transparent
+                  font-style: normal
+                  font-weight: 600
+                  font-size: 16px
+                  line-height: 160%
+                  color: #F7FDFC
+                .modal__input-teams.editProfile
+                  width: 53vw
+                  border: 1px solid #505353
+                  border-radius: 4px
+                  background-color: transparent
+                  font-style: normal
+                  font-weight: 600
+                  font-size: 16px
+                  line-height: 160%
+                  color: #F7FDFC
             .modal__input__description
               label
                 .modal__input-teams__description
@@ -70,6 +86,11 @@
                   border: 1px solid #505353
                   border-radius: 4px
                   background-color: transparent
+                  font-style: normal
+                  font-weight: 600
+                  font-size: 16px
+                  line-height: 160%
+                  color: #F7FDFC
           label
             .modal__input-copy
               position: absolute
@@ -287,3 +308,15 @@ input:active, textarea:active
   .modal__input-teamsLink::placeholder
     text-overflow: ellipsis
     width: 100px
+@media screen and (max-width: 1650px)
+  .modal__container .modal__team .modal__info-container .modal__info p
+    font-size: 34px
+@media screen and (max-width: 1300px)
+  .modal__container .modal__team .modal__info-container .modal__form-team .modal__info-infoTeam .modal__input-container .modal__input label .modal__input-teams.editProfile
+    width: 81vw
+@media screen and (max-width: 900px)
+  .modal__container .modal__team .modal__info-container .modal__info p
+    font-size: 28px
+@media screen and (max-width: 470px)
+  .modal__container .modal__team .modal__info-container .modal__info p
+    font-size: 24px

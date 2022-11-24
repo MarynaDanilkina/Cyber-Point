@@ -9,6 +9,8 @@ export type IInitialState = {
   modalExit: boolean;
   LogoTeams: string;
   BanerTeams: string;
+  modalEditProfile: boolean;
+  modalEditTeam: boolean;
 };
 export const initialState: IInitialState = {
   user: false,
@@ -20,6 +22,8 @@ export const initialState: IInitialState = {
   modalSuccess: false,
   LogoTeams: '/logoTeamNew.png',
   BanerTeams: '/Banner.png',
+  modalEditProfile: false,
+  modalEditTeam: false,
 };
 
 export const reduserSlice = createSlice({
@@ -70,7 +74,19 @@ export const reduserSlice = createSlice({
     },
     closeModalSuccess(state) {
       state.modalSuccess = false;
-    }
+    },
+    openModalEditProfile(state) {
+      state.modalEditProfile = true;
+    },
+    closeModalEditProfile(state) {
+      state.modalEditProfile = false;
+    },
+    openmodalEditTeam(state) {
+      state.modalEditTeam = true;
+    },
+    closemodalEditTeam(state) {
+      state.modalEditTeam = false;
+    },
   },
 });
 export default reduserSlice.reducer;
