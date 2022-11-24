@@ -14,6 +14,7 @@
 .modal__container.active
   -webkit-transform: scale(1)
   transform: scale(1)
+  z-index: 100
   .modal
     background: #141515
     background-image: url(./BackgroundModal.png)
@@ -24,7 +25,7 @@
     display: flex
     justify-content: center
     align-items: center
-
+    margin: 0px 50px
     .modal__info-container
       width: 100%
       margin: 0px 64px
@@ -50,3 +51,30 @@
         button
 
 img:hover
+@media screen and (max-width: 900px)
+  .modal__container.active
+    .modal
+      margin: 0px 24px
+      .modal__info-container
+        margin: 0px 20px
+        .modal__info
+          display: flex
+          justify-content: space-between
+          p
+            font-size: 30px
+            padding-right: 15px
+            line-height: 120%
+@media screen and (max-width: 600px)
+  .modal__container.active
+    .modal
+      margin: 0px 24px
+      height: 186px
+      .modal__info-container
+        margin: 0px 16px
+        gap: 48px
+        .modal__info
+          display: flex
+          justify-content: space-between
+          p
+            font-size: 24px
+            padding-right: 10px

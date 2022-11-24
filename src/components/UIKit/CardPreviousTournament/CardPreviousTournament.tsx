@@ -1,11 +1,16 @@
 import React from 'react';
+import Logotype from '../PFP/Icon/Logotype';
 import './CardPreviousTournament.sass';
 
 const CardPreviousTournament= ({title = '', date = '', price = '', }) => {
   return (
     <>
       <div className="card-Previoustournaments__container">
-        {title === '' ? (<img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard' />) : (
+        {title === '' ? (
+          <div className='Empty-card__container'>
+            <Logotype/>
+          </div>
+            ) : (
           <div className="card-tournaments">
             <div className="card-tournaments__top-container">
               <div className="card-tournaments__top-title-container">

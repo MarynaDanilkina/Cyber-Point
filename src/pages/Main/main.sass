@@ -1,7 +1,6 @@
 .main__wrapper
   .main__video-container
     background: linear-gradient(0deg, rgba(22, 22, 22, 0.32), rgba(22, 22, 22, 0.32)), url(Video.png)
-    /***width: 1920px
     height: 976px
     display: flex
     align-items: flex-end
@@ -24,7 +23,6 @@
     background: #141515
     background-image: url(./Background2.png)
     background-position: center
-    /**width: 1920px
     height: 1080px
     display: flex
     justify-content: center
@@ -45,11 +43,11 @@
       display: flex
       justify-content: center
       align-items: center
-      margin: 160px 48px 0px
+      margin: 160px 0px 0px
       flex-direction: column
       gap: 160px
+      padding: 0px 48px
       .main__3dBlock-tournaments
-        /**z-index: 10
         .Block-tournaments__text
           display: flex
           align-items: flex-end
@@ -69,7 +67,14 @@
         .Block-tournaments__cards
           margin-top: 64px
           display: flex
-          gap: 24px
+          gap: 32px
+          a
+            .card-Upcomingtournaments__container
+              width: 592px
+            .card-Previoustournaments__container
+              width: 592px
+              .card-tournaments
+                padding: 0px
         .Block-tournaments__cards.bottom
           margin-bottom: 955px
 .container__clider

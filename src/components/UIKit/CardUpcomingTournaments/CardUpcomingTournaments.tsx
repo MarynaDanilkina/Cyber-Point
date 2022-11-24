@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logotype from '../PFP/Icon/Logotype';
 import SeeAll from '../SeeAll/SeeAll';
 import './CardUpcomingTournaments.sass';
 
@@ -7,7 +8,11 @@ const CardUpcomingTournaments= ({title = '', date = '', price = '', }) => {
   return (
     <>
       <div className="card-Upcomingtournaments__container">
-        {title === '' ? (<img src='/EmptyCard.png' alt='EmptyCard' className='EmptyCard' />) : (
+        {title === '' ? (
+          <div className='Empty-card__container'>
+            <Logotype/>
+          </div>
+            ) : (
           <div className="card-tournaments">
             <div className="card-tournaments__top-container">
               <div className="card-tournaments__top-title-container">
