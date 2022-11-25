@@ -9,10 +9,11 @@
   --white: #F7FDFC
   --red: #CD4646
   --midRed: #A12B2B
-  body
-    margin: 0
-    background: var(--lightBlack)
-    position: relative
+
+body
+  margin: 0
+  background: var(--lightBlack)
+  position: relative
 a
   outline: none
   text-decoration: none
@@ -26,6 +27,8 @@ h3, h2, h1, p, li, ul
   font-style: normal
   margin: 0
   margin: 0
+  position: relative
+
 .highlight1
   position: absolute
   width: 45vw
@@ -37,14 +40,7 @@ h3, h2, h1, p, li, ul
   bottom: -320px
   right: -160px
   animation: effect 5s infinite
-@keyframes effect
-  from
-    bottom: -1500px
-    right: -160px
 
-  to
-    bottom: 1500px
-    right: -160px
 .highlight2
   position: absolute
   width: 55vw
@@ -54,14 +50,6 @@ h3, h2, h1, p, li, ul
   filter: blur(160px)
   transform: rotate(15deg)
   animation: effect2 5s infinite
-@keyframes effect2
-  from
-    bottom: 1500px
-    left: -460px
-
-  to
-    bottom: -1500px
-    left: -460px
 
 .modal__team
   overflow: hidden

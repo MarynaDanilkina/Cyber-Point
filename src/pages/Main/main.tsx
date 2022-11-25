@@ -34,8 +34,6 @@ const Main = () => {
           </div>
           <div className='main__info-container'>
             <p className='main__info-container-text'><span className='main__Headline1'>Cyber Point </span>- платформа, созданная для соревновательной игры в CS:GO. Это место, где можно создать свою команду или присоединиться к уже существующей и выигрывать <span className='main__Headline1'>денежные призы</span> в турнирах!</p>
-            <div className='highlight1'></div>
-            <div className='highlight2'></div>
           </div>
           <div className='main__3dBlock'>
             <div className='main__3dBlock__container'>
