@@ -16,7 +16,7 @@
       font-size: 64px
       line-height: 150%
       text-transform: uppercase
-      color: #F7FDFC
+      color: var(--white)
       margin: 0
       margin-top: 235px
       word-wrap: break-word
@@ -26,15 +26,16 @@
       align-items: center
       margin: 0px auto 0px
       gap: 24px
+      z-index: 10
     .tournament__button-info
       margin-bottom: 127px
   .icon-ArrowBottom
     margin-bottom: 40px
     font-size: 24px
   .icon-ArrowBottom:hover
-    color: #F7FDFC
+    color: var(--white)
   .icon-ArrowBottom:active
-    color: #2BA199
+    color: var(--midPrimary)
 
 .main__tournaments
   display: flex
@@ -61,7 +62,7 @@
           max-width: 23vw
           width: 100%
           text-align: center
-          border-bottom: 2px solid #505353
+          border-bottom: 2px solid var(--grey)
           margin: 0px 8px
           a
             cursor: pointer
@@ -70,11 +71,11 @@
               font-weight: 700
               font-size: 24px
               line-height: 160%
-              color: #505353
+              color: var(--grey)
               margin: 0
         .tournament-list.active
           padding-bottom: 16px
-          border-bottom: 2px solid #46CDC4
+          border-bottom: 2px solid var(--primary)
           a
             cursor: default
             p
@@ -82,7 +83,7 @@
               font-weight: 700
               font-size: 24px
               line-height: 160%
-              color: #46CDC4
+              color: var(--primary)
 .main__tournament-pagination
   display: flex
   justify-content: center

@@ -1,8 +1,8 @@
 .card-Previoustournaments__container:hover .more__container p
   cursor: pointer
-  color: #F7FDFC
+  color: var(--white)
 .card-Previoustournaments__container:active .more__container p
-  color: #F7FDFC
+  color: var(--white)
 .card-Previoustournaments__container
   background: linear-gradient(0deg, rgba(22, 22, 22, 0.32), rgba(22, 22, 22, 0.32)), url(Click.png)
   background-position: center center
@@ -29,14 +29,14 @@
             font-weight: 700
             font-size: 24px
             line-height: 160%
-            color: #F7FDFC
+            color: var(--white)
         .card-tournaments__date
           p
             font-style: normal
             font-weight: 600
             font-size: 16px
             line-height: 160%
-            color: #787D7D
+            color: var(--lightGrey)
             margin-top: 8px
       .card-tournaments__top-icon
     .card-tournaments__bottom-container
@@ -51,7 +51,7 @@
           font-size: 40px
           line-height: 150%
           text-transform: uppercase
-          color: #46CDC4
+          color: var(--primary)
 .more__container
   display: flex
   align-items: center
@@ -61,11 +61,11 @@
     font-weight: 600
     font-size: 18px
     line-height: 160%
-    color: #787D7D
+    color: var(--lightGrey)
     padding: 0px
     margin-right: 8px
   i
-    color: var(--restColor)
+    color: var(---grey)
 .Block-tournaments__card, .tournament-name__card
   width: 32%
   height: 32%
@@ -99,9 +99,9 @@
   .card-tournaments__bottom
     display: none
   .tournament-name__card:hover .card-Upcomingtournaments__container .card-tournaments .card-tournaments__top-container .card-tournaments__top-title-container .card-tournaments__title p
-    color: var(--hoverColor)
+    color: var(--primary)
   .tournament-name__card:hover .card-Previoustournaments__container .card-tournaments .card-tournaments__top-container .card-tournaments__top-title-container .card-tournaments__title p
-    color: var(--hoverColor)
+    color: var(--primary)
 @media screen and (max-width: 440px)
   .card-Previoustournaments__container .card-tournaments
     padding: 0px 84px 0px 0px

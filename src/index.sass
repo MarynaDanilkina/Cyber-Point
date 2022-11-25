@@ -1,11 +1,17 @@
 :root
-  --restColor: #505353
-  --hoverColor: #46CDC4
-  --activeColor: #2BA199
-
+  --primary: #46CDC4
+  --midPrimary: #2BA199
+  --darkPrimary: #0E1A10
+  --black: #141515
+  --lightBlack: #191A1A
+  --grey: #505353
+  --lightGrey: #787D7D
+  --white: #F7FDFC
+  --red: #CD4646
+  --midRed: #A12B2B
   body
     margin: 0
-    background: #191A1A
+    background: var(--lightBlack)
     position: relative
 a
   outline: none
@@ -22,9 +28,9 @@ h3, h2, h1, p, li, ul
   margin: 0
 .highlight1
   position: absolute
-  width: 879px
-  height: 879px
-  background: #46CDC4
+  width: 45vw
+  height: 45vw
+  background: var(--primary)
   opacity: 0.32
   filter: blur(160px)
   z-index: 0
@@ -41,9 +47,9 @@ h3, h2, h1, p, li, ul
     right: -160px
 .highlight2
   position: absolute
-  width: 1199px
-  height: 640px
-  background: #46CDC4
+  width: 55vw
+  height: 19vw
+  background: var(--primary)
   opacity: 0.32
   filter: blur(160px)
   transform: rotate(15deg)
@@ -56,3 +62,35 @@ h3, h2, h1, p, li, ul
   to
     bottom: -1500px
     left: -460px
+
+.modal__team
+  overflow: hidden
+  position: relative
+.modal__info-container:before,
+.modal__info-container:after
+  content: ''
+  position: absolute
+  height: 100%
+.modal__info-container:before
+  position: absolute
+  width: 55vw
+  height: 19vw
+  background: var(--primary)
+  opacity: 0.32
+  filter: blur(160px)
+  transform: rotate(15deg)
+  top: -380px
+  left: -550px
+.modal__info-container:after
+  position: absolute
+  width: 45vw
+  height: 45vw
+  background: var(--primary)
+  opacity: 0.32
+  filter: blur(160px)
+  z-index: 0
+  bottom: -800px
+  right: -500px
+.modal
+  position: relative
+  overflow: hidden

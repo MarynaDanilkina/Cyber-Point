@@ -30,7 +30,7 @@
             font-size: 64px
             line-height: 150%
             text-transform: uppercase
-            color: #F7FDFC
+            color: var(--white)
             margin: 0
           img
             width: 32px
@@ -45,7 +45,7 @@
     font-weight: 600
     font-size: 18px
     line-height: 160%
-    color: #787D7D
+    color: var(--lightGrey)
     margin: 0
 .Cards__container
   display: flex
@@ -53,6 +53,7 @@
   align-items: center
   margin: 0px auto 960px
   gap: 24px
+  z-index: 10
 .profile__exit-faceit:hover
   cursor: pointer
 .tournament__Cards-container
@@ -63,15 +64,15 @@
   gap: 24px
 .edit:hover
   cursor: pointer
-  stroke: var(--hoverColor)
+  stroke: var(--primary)
 .edit
-  stroke: var(--restColor)
+  stroke: var(---grey)
 .edit:active
-  stroke: var(--activeColor)
+  stroke: var(--midPrimary)
 .profile__exit-faceit:hover p
-  color: var(--hoverColor)
+  color: var(--primary)
 .profile__exit-faceit:active p
-  color: var(--activeColor)
+  color: var(--midPrimary)
 
 @media screen and (max-width: 1100px)
   .profile__container

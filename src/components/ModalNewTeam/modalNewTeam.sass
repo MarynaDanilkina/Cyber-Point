@@ -1,6 +1,6 @@
 .modal__container
   .modal__team
-    background: #141515
+    background: var(--black)
     border-radius: 8px
     width: 1208px
     display: flex
@@ -21,7 +21,7 @@
           font-size: 40px
           line-height: 150%
           text-transform: uppercase
-          color: #FFFFFF
+          color: var(--white)
           margin: 0
         img
           width: 32px
@@ -44,7 +44,7 @@
               font-weight: 700
               font-size: 24px
               line-height: 160%
-              color: #FFFFFF
+              color: var(--white)
               margin: 0
           .modal__input-container
             display: flex
@@ -60,37 +60,37 @@
 
                 .modal__input-teams
                   width: 496px
-                  border: 1px solid #505353
+                  border: 1px solid var(--grey)
                   border-radius: 4px
                   background-color: transparent
                   font-style: normal
                   font-weight: 600
                   font-size: 16px
                   line-height: 160%
-                  color: #F7FDFC
+                  color: var(--white)
                 .modal__input-teams.editProfile
                   width: 53vw
-                  border: 1px solid #505353
+                  border: 1px solid var(--grey)
                   border-radius: 4px
                   background-color: transparent
                   font-style: normal
                   font-weight: 600
                   font-size: 16px
                   line-height: 160%
-                  color: #F7FDFC
+                  color: var(--white)
             .modal__input__description
               label
                 .modal__input-teams__description
                   width: 1048px
                   height: 126px
-                  border: 1px solid #505353
+                  border: 1px solid var(--grey)
                   border-radius: 4px
                   background-color: transparent
                   font-style: normal
                   font-weight: 600
                   font-size: 16px
                   line-height: 160%
-                  color: #F7FDFC
+                  color: var(--white)
           label
             .modal__input-copy
               position: absolute
@@ -99,7 +99,7 @@
             .modal__input-teamsLink
               width: 1048px
               height: 28px
-              border: 1px solid #505353
+              border: 1px solid var(--grey)
               border-radius: 4px
               background-color: transparent
 
@@ -109,7 +109,7 @@ input::placeholder
   font-weight: 600
   font-size: 18px
   line-height: 100%
-  color: #505353
+  color: var(--grey)
 
 input, textarea
   font-family: 'RF Dewi Expanded'
@@ -117,19 +117,19 @@ input, textarea
   font-weight: 600
   font-size: 18px
   line-height: 100%
-  color: #505353
+  color: var(--grey)
   padding: 16px 16px
 input:focus, textarea:focus
-  border: 1px solid #46CDC4
+  border: 1px solid var(--primary)
 input:active, textarea:active
-  border: 1px solid #46CDC4
+  border: 1px solid var(--primary)
 .error
   font-family: 'RF Dewi Expanded'
   font-style: normal
   font-weight: 600
   font-size: 12px
   line-height: 160%
-  color: #CD4646
+  color: var(--red)
   margin: 8px 0px 0px
 .input-file
   display: none
@@ -142,11 +142,11 @@ input:active, textarea:active
     font-weight: 600
     font-size: 14px
     line-height: 160%
-    color: #46CDC4
+    color: var(--primary)
     padding: 0px 5px
-    background-color: #141515
+    background-color: var(--black)
   .while__typing.err
-    color: #CD4646
+    color: var(--red)
 .modal__input__description
   position: relative
   .label__description
@@ -158,11 +158,11 @@ input:active, textarea:active
       font-weight: 600
       font-size: 14px
       line-height: 160%
-      color: #46CDC4
+      color: var(--primary)
       padding: 0px 5px
-      background-color: #141515
+      background-color: var(--black)
     .while__typing.err
-      color: #CD4646
+      color: var(--red)
 @media screen and (max-width: 1300px)
   .modal__container
     .modal__team
@@ -269,7 +269,7 @@ input:active, textarea:active
     font-weight: 600
     font-size: 12px
     line-height: 100%
-    color: #505353
+    color: var(--grey)
     text-overflow: ellipsis
 @media screen and (max-width: 500px)
   .modal__container

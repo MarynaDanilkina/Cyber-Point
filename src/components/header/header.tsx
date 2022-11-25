@@ -38,6 +38,8 @@ const Header = () => {
   return (
     <>
       <div className="header__wrapper">
+        <div className='highlight1'></div>
+        <div className='highlight2'></div>
         <div className="header__left">
           <Link to="/"><Logotype/></Link>
           <nav className='header__nav' >

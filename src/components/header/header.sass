@@ -1,8 +1,8 @@
 .header
-  /**width: 1920px
-  background: #141515
-  color: #fff
-  background-image: url(./Background.png)
+  background: var(--black)
+  color: var(--white)
+  position: relative
+  overflow: hidden
 
   &__wrapper
     display: flex
@@ -28,14 +28,14 @@
         font-weight: 600
         font-size: 18px
         line-height: 160%
-        color: #F7FDFC
+        color: var(--white)
         a
-          color: #F7FDFC
+          color: var(--white)
         a:hover
-          color: #46CDC4
+          color: var(--primary)
           cursor: pointer
       .tournaments:hover
-        color: #46CDC4
+        color: var(--primary)
         cursor: pointer
 .header__right
   display: flex
@@ -46,7 +46,7 @@
   font-weight: 600
   font-size: 12px
   line-height: 160%
-  color: #505353
+  color: var(--grey)
   margin: 0
   text-align: right
 .header__input
@@ -56,21 +56,21 @@
   font-size: 18px
   line-height: 160%
   text-align: right
-  color: #F7FDFC
+  color: var(--white)
   margin: 0
   height: 29px
 .header__input:hover
   cursor: pointer
-  color: #46CDC4
+  color: var(--primary)
 .header__head
   margin-right: 17px
 .Divider
   width: 48px
   height: 0px
-  border: 1.5px solid #141515
+  border: 1.5px solid var(--black)
   transform: rotate(90deg)
 a
-  color: #F7FDFC
+  color: var(--white)
 .nemu__modal
   display: none
 @media screen and (max-width: 1600px)
@@ -147,7 +147,7 @@ a
     height: 10%
     width: 100%
     transition: all 0.5s ease-out 0s
-    background-color: #fff
+    background-color: var(--white)
 
   .header__menu-icon::before,
   .header__menu-icon::after
@@ -179,9 +179,8 @@ a
   .header__nav, .header__right
     display: none
   .nemu__modal
-    background: #141515
-    color: #fff
-    background-image: url(./Background1.png)
+    background: var(--black)
+    color: var(--white)
     padding-top: 70px
     font-size: 30px
     position: fixed
@@ -215,13 +214,13 @@ a
         line-height: 150%
         text-transform: uppercase
         a.active
-          color: #46CDC4
+          color: var(--primary)
       .nemu__modal-header__item.tournament
         font-weight: 700
         font-size: 32px
         line-height: 150%
         text-transform: uppercase
-        color: #F7FDFC
+        color: var(--white)
         margin-top: 32px
       .nemu__modal-header__item.tournaments
         margin-top: 16px
@@ -229,14 +228,14 @@ a
         font-size: 16px
         line-height: 160%
         a
-          color: #787D7D
+          color: var(--lightGrey)
       .nemu__modal-header__item.rating
         font-weight: 700
         font-size: 32px
         line-height: 150%
         text-transform: uppercase
         a
-          color: #F7FDFC
+          color: var(--white)
     .nemu__modal-nav-info
       display: flex
       margin: 0px 40px
