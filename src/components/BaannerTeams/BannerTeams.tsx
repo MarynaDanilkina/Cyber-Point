@@ -1,13 +1,18 @@
 
-import { useAppSelector } from 'interface/interface';
+import Edit from 'components/UIKit/edit/edit';
 import React from 'react';
 import './BannerTeams.sass';
 
 const BannerTeams = () => {
-  const { BanerTeams } = useAppSelector((state) => state);
   
   return (
-    <img src={BanerTeams} alt='pfp' className='BannerTeams' />
+    <div className="BannerTeams__container">
+      <img src='Banner.png' alt='pfp' className='BannerTeams' />
+      <div className="BannerTeams__edit">
+        <p>Баннер</p>
+        <Edit />
+      </div>
+    </div>
   );
 };
 export default BannerTeams;

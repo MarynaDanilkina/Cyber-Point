@@ -65,10 +65,10 @@ const Header = () => {
               <li className='nemu__modal-header__item tournament'>Контакты</li>
               </ul>
               <div className="nemu__modal-nav-info">
-                <Link to="/profile"><User /></Link>
+                <Link to="/profile" ><User /></Link>
                 <div className='header__head'>
                   <p className='header__player'>Команда</p>
-                  <p className='header__input'><Link to="/team">Отсутствует</Link></p>
+                  <p className='header__input'><Link to="/team" className='header__input-a'>Отсутствует</Link></p>
                 </div>
               </div>
           </nav>
@@ -84,12 +84,12 @@ const Header = () => {
             <>
               <div className='header__head'>
                   <p className='header__player'>Команда</p>
-                  <p className='header__input'><Link to="/team">Отсутствует</Link></p>
+                  <p className='header__input'><Link to="/team" className='header__input-a'>Отсутствует</Link></p>
               </div>
               <div className='Divider'></div>
               <div className='header__head'>
                 <p className='header__player'>Игрок</p>
-                <p className='header__input'><Link to="/profile">ItsGeorge</Link></p>
+                <p className='header__input'><Link to="/profile" className='header__input-a'>ItsGeorge</Link></p>
               </div>
             </>
         )}

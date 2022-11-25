@@ -47,7 +47,6 @@ const ModalEditProfile = () => {
               </svg>
             </div>
             <form onSubmit={handleSubmit(onSubmit) } className='modal__form-team'>
-              
               <div className="modal__info-logo">
                 <label>
                   <input
@@ -85,11 +84,13 @@ const ModalEditProfile = () => {
                             {errors.Teg.message}
                           </p>
                         )}
-                      </label>
+                    </label>
                       
                     </div>
                   </div>
-                
+                <button className='modal__input-buttonFaceit' type="submit">
+                        <p className='buttonFaceit-text'>faceit: itsgeorge</p>
+                      </button>
               </div>
               <div className='modal__info-button'>
                   <div className="" onClick={() => Закрыть()} >

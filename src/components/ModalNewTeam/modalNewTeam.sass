@@ -1,12 +1,15 @@
 .modal__container
   .modal__team
     background: var(--black)
+    background-image: url(Background.png)
+    background-size: 100% 100%
     border-radius: 8px
     width: 1208px
     display: flex
     justify-content: center
     align-items: center
     .modal__info-container
+      padding: 0px 15px
       display: flex
       flex-direction: column
       gap: 64px
@@ -161,7 +164,13 @@ input:active, textarea:active
       background-color: var(--black)
     .while__typing.err
       color: var(--red)
+@media screen and (max-width: 1650px)
+  .modal__container .modal__team .modal__info-container .modal__info p
+    font-size: 34px
+
 @media screen and (max-width: 1300px)
+  .modal__container .modal__team .modal__info-container .modal__form-team .modal__info-infoTeam .modal__input-container .modal__input label .modal__input-teams.editProfile
+    width: 81vw
   .modal__container
     .modal__team
       width: 93vw
@@ -190,7 +199,7 @@ input:active, textarea:active
               .modal__input__description
                 label
                   .modal__input-teams__description
-                    width: 82vw
+                    width: 74vw
             label
               .modal__input-copy
               .modal__input-teamsLink
@@ -198,8 +207,11 @@ input:active, textarea:active
 @media screen and (max-width: 1000px)
   .modal__container
     .modal__team
-      width: 93vw
+      width: 85vw
+      padding: 25px
       .modal__info-container
+        padding: 75px 15px
+        margin: 0px
         .modal__info
           p
             font-size: 30px
@@ -221,7 +233,7 @@ input:active, textarea:active
                 gap: 14px
                 label
                   .modal__input-teams
-                    width: 82vw
+                    width: 77vw
 
               .modal__input__description
                 label
@@ -229,38 +241,56 @@ input:active, textarea:active
             label
               .modal__input-copy
               .modal__input-teamsLink
-                width: 82vw
+                width: 77vw
 @media screen and (max-width: 600px)
   .modal__container
     .modal__team
-      width: 93vw
+      width: 83vw
+      padding: 0px
+      margin-top: 354px
+      margin-bottom: 51px
       .modal__info-container
+        width: 73vw
         .modal__info
           p
-            font-size: 24px
+            font-size: 23px
           img
         .modal__form-team
           .modal__info-logo
             align-items: center
+            width: 73vw
             label
               .logoTeams
-                width: 80vw
+                width: 73vw
               .BannerTeams
-                width: 80vw
+                width: 73vw
           .modal__info-infoTeam
             .modal__info__title
               p
                 font-size: 20px
             .modal__input-container
+              align-items: center
               .modal__input
                 label
                   .modal__input-teams
+                    width: 73vw
               .modal__input__description
                 label
                   .modal__input-teams__description
+                    width: 73vw
             label
               .modal__input-copy
+
               .modal__input-teamsLink
+                width: 73vw
+          .modal__info-button
+            div
+              display: flex
+              justify-content: center
+              .button
+                width: 73vw
+                p
+                  font-size: 13px
   input::placeholder
     font-family: 'RF Dewi Expanded'
     font-style: normal
@@ -269,10 +299,13 @@ input:active, textarea:active
     line-height: 100%
     color: var(--grey)
     text-overflow: ellipsis
+  .modal__container .modal__team .modal__info-container .modal__form-team .modal__info-infoTeam .modal__input-container .modal__input label .modal__input-teams.editProfile
+    width: 68vw
 @media screen and (max-width: 500px)
   .modal__container
     .modal__team
-      width: 93vw
+      width: 87vw
+      margin: 100px 0px
       .modal__info-container
         .modal__info
           p
@@ -306,15 +339,7 @@ input:active, textarea:active
   .modal__input-teamsLink::placeholder
     text-overflow: ellipsis
     width: 100px
-@media screen and (max-width: 1650px)
-  .modal__container .modal__team .modal__info-container .modal__info p
-    font-size: 34px
-@media screen and (max-width: 1300px)
-  .modal__container .modal__team .modal__info-container .modal__form-team .modal__info-infoTeam .modal__input-container .modal__input label .modal__input-teams.editProfile
-    width: 81vw
-@media screen and (max-width: 900px)
-  .modal__container .modal__team .modal__info-container .modal__info p
-    font-size: 28px
+
 @media screen and (max-width: 470px)
   .modal__container .modal__team .modal__info-container .modal__info p
     font-size: 24px

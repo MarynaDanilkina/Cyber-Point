@@ -2,6 +2,7 @@
   background: var(--black)
   color: var(--white)
   position: relative
+  background-image: url(Noise.png)
   overflow: hidden
 
   &__wrapper
@@ -10,6 +11,73 @@
     align-items: center
     height: 104px
     padding: 0px 48px
+.main__info-container:before,
+.main__info-container:after
+  content: ''
+  position: absolute
+  height: 100%
+.header:before,
+.header:after
+  content: ''
+  position: absolute
+  height: 100%
+.main__info-container:before
+  position: absolute
+  width: 55vw
+  height: 29vw
+  background: var(--primary)
+  opacity: 0.32
+  filter: blur(160px)
+  transform: rotate(15deg)
+  animation: animTop 10s infinite
+.main__info-container:after
+  position: absolute
+  width: 46vw
+  height: 46vw
+  background: var(--primary)
+  opacity: 0.32
+  filter: blur(160px)
+  z-index: 0
+  animation: animBottom 10s infinite
+.header:before
+  position: absolute
+  width: 55vw
+  height: 29vw
+  background: var(--primary)
+  opacity: 0.32
+  filter: blur(160px)
+  transform: rotate(15deg)
+  animation: animTop 10s infinite
+
+.header:after
+  position: absolute
+  width: 46vw
+  height: 46vw
+  background: var(--primary)
+  opacity: 0.32
+  filter: blur(160px)
+  z-index: 0
+  animation: animBottom 10s infinite
+  @keyframes animBottom
+    from
+      right: -15%
+      bottom: -66%
+    50%
+      right: -15%
+      bottom: 51%
+    to
+      right: -15%
+      bottom: -66%
+  @keyframes animTop
+    from
+      top: -29%
+      left: -30%
+    50%
+      top: 67%
+      left: -30%
+    to
+      top: -29%
+      left: -30%
 
 .header__left
   display: flex
@@ -59,6 +127,8 @@
   color: var(--white)
   margin: 0
   height: 29px
+  position: relative
+  z-index: 10
 .header__input:hover
   cursor: pointer
   color: var(--primary)
@@ -116,6 +186,11 @@ a
   .header__input
     font-size: 14px
 @media screen and (max-width: 980px)
+  .header:before
+    z-index: 100
+  .main__info-container:before,
+  .main__info-container:after
+    height: 0
   .header__left
     .header__nav
       margin-left: 20px
@@ -133,7 +208,7 @@ a
 
   .header__menu-icon
     margin-left: 20px
-    z-index: 20
+    z-index: 200
     display: block
     position: relative
     width: 50px
@@ -200,8 +275,7 @@ a
     width: 100%
     height: 100%
     transition: left 0.3s ease 0s
-    z-index: 10
-
+    z-index: 1000
   .nemu__modal-nav
     .nemu__modal-header__list
       margin: 0
@@ -249,7 +323,10 @@ a
     margin-left: 24px
   .nemu__modal._active
     left: 40%
-    z-index: 10
+    z-index: 1000
+  .header:before,
+  .header:after
+    opacity: 1.32
 
 @media screen and (max-width: 550px)
   .nemu__modal._active
@@ -262,7 +339,21 @@ a
     z-index: 10
   .header__wrapper
     padding: 0px 24px
+  .header:before,
+  .header:after
+    opacity: 2.5
 
 @media screen and (max-width: 360px)
   .nemu__modal._active
     left: 0%
+  .header:before,
+  .header:after
+    opacity: 4
+
+.header__input-a
+  color: var(--white)
+  position: relative
+.header__input-a:hover
+  color: var(--primary)
+.header__input-a:active
+  color: var(--midPrimary)

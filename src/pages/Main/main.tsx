@@ -22,19 +22,21 @@ const Main = () => {
   return (
     <>
       <header className="header _container">
-        <Header/>
-      </header>
-      <main className="main__wrapper">
-        <div className="main__container _container">
-          <div className='main__video-container'>
+        <Header />
+        <div className='main__video-container'>
             <p className='main__video-container__text'>Учавствуй в <span className='main__Headline1'>турнирах по CS:GO</span> вместе с командой и выигрывай призы!</p>
             <div className="main__button" onClick={() => СоздатьКоманду()}>
               <ButtomAddTeam />
             </div>
-          </div>
-          <div className='main__info-container'>
+        </div>
+        <div className='main__info-container'>
             <p className='main__info-container-text'><span className='main__Headline1'>Cyber Point </span>- платформа, созданная для соревновательной игры в CS:GO. Это место, где можно создать свою команду или присоединиться к уже существующей и выигрывать <span className='main__Headline1'>денежные призы</span> в турнирах!</p>
           </div>
+      </header>
+      <main className="main__wrapper">
+        <div className="main__container _container">
+          
+          
           <div className='main__3dBlock'>
             <div className='main__3dBlock__container'>
               <div className=' main__3dBlock-tournaments upcoming__tournaments'>

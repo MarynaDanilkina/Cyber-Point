@@ -11,6 +11,7 @@ import Team from 'pages/Team/Team';
 import Tournament from 'pages/Tournament/Tournament';
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import 'VH.py'
 
 function App() {
   return (

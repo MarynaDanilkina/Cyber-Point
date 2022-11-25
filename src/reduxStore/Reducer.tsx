@@ -21,7 +21,7 @@ export const initialState: IInitialState = {
   modalExit: false,
   modalSuccess: false,
   LogoTeams: '/logoTeamNew.png',
-  BanerTeams: '/Banner.png',
+  BanerTeams: '',
   modalEditProfile: false,
   modalEditTeam: false,
 };

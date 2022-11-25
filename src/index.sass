@@ -51,15 +51,12 @@ h3, h2, h1, p, li, ul
   transform: rotate(15deg)
   animation: effect2 5s infinite
 
-.modal__team
-  overflow: hidden
-  position: relative
-.modal__info-container:before,
-.modal__info-container:after
+.modal:before,
+.modal:after
   content: ''
   position: absolute
   height: 100%
-.modal__info-container:before
+.modal:before
   position: absolute
   width: 55vw
   height: 19vw
@@ -69,7 +66,7 @@ h3, h2, h1, p, li, ul
   transform: rotate(15deg)
   top: -380px
   left: -550px
-.modal__info-container:after
+.modal:after
   position: absolute
   width: 45vw
   height: 45vw
@@ -79,6 +76,3 @@ h3, h2, h1, p, li, ul
   z-index: 0
   bottom: -800px
   right: -500px
-.modal
-  position: relative
-  overflow: hidden

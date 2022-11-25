@@ -1,3 +1,4 @@
+import BannerTeams from 'components/BaannerTeams/BannerTeams';
 import Card from 'components/Card/card';
 import Footer from 'components/footer/footer';
 import Header from 'components/header/header';
@@ -11,7 +12,6 @@ import { reduserSlice } from 'reduxStore/Reducer';
 import './Team.sass';
 
 const Team = () => {
-  const { BanerTeams } = useAppSelector((state) => state);
   const { modalExit, modalEditTeam } = useAppSelector((state) => state);
   const { openModalExit, openmodalEditTeam } = reduserSlice.actions;
   const dispatch = useAppDispatch();
@@ -30,7 +30,7 @@ const Team = () => {
             <div className='profile__title__wrapper'>
               <div className="profile-team">
                 <div className='profile-team-banner'>
-                  <img src={BanerTeams} alt='pfp' className='banner'/>
+                  <BannerTeams />
                 </div>
                 <PFP />
               </div>

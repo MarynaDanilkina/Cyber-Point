@@ -1,48 +1,53 @@
+main
+  background-image: url(Noise.png)
+
+.main__video-container
+  background: linear-gradient(0deg, rgba(22, 22, 22, 0.32), rgba(22, 22, 22, 0.32)), url(Video.png)
+  height: 976px
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  width: 100%
+  background-position: center
+  overflow: hidden
+  position: relative
+  z-index: 100
+  .main__Headline1
+    color: var(--primary)
+  .main__video-container__text
+    margin: 0px 48px 40px
+    font-family: 'RF Dewi Expanded'
+    font-style: normal
+    font-weight: 700
+    font-size: 40px
+    line-height: 150%
+    text-transform: uppercase
+    color: var(--white)
+    width: 902px
+  .main__button
+    margin: 0px 48px 40px
+.main__info-container
+  background: var(--black)
+  background-position: center
+  height: 1080px
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  position: relative
+  .main__info-container-text
+    font-family: 'RF Dewi Expanded'
+    font-style: normal
+    font-weight: 600
+    font-size: 32px
+    line-height: 160%
+    text-align: center
+    color: var(--white)
+    margin: 0
+    max-width: 1516px
+    padding: 0px 20px
 .main__wrapper
-  .main__video-container
-    background: linear-gradient(0deg, rgba(22, 22, 22, 0.32), rgba(22, 22, 22, 0.32)), url(Video.png)
-    height: 976px
-    display: flex
-    align-items: flex-end
-    justify-content: space-between
-    width: 100%
-    background-position: center
-    .main__Headline1
-      color: var(--primary)
-    .main__video-container__text
-      margin: 0px 48px 40px
-      font-family: 'RF Dewi Expanded'
-      font-style: normal
-      font-weight: 700
-      font-size: 40px
-      line-height: 150%
-      text-transform: uppercase
-      color: var(--white)
-      width: 902px
-    .main__button
-      margin: 0px 48px 40px
-  .main__info-container
-    background: var(--black)
-    background-position: center
-    height: 1080px
-    display: flex
-    justify-content: center
-    align-items: center
-    overflow: hidden
-    position: relative
-    .main__info-container-text
-      font-family: 'RF Dewi Expanded'
-      font-style: normal
-      font-weight: 600
-      font-size: 32px
-      line-height: 160%
-      text-align: center
-      color: var(--white)
-      margin: 0
-      max-width: 1516px
-      padding: 0px 20px
   .main__3dBlock
-    /**background-image: url(./Noise1.png)
     .main__3dBlock__container
       display: flex
       justify-content: center
@@ -88,40 +93,34 @@
 .main__3dBlock-tournaments.past__tournaments
   margin-bottom: 960px
 @media screen and (max-width: 1500px)
-  .main__wrapper
-    .main__video-container
-      .main__Headline1
-      .main__video-container__text
-      .main__button
-    .main__info-container
-      .main__info-container-text
-    .main__3dBlock
-      .main__3dBlock__container
-        .main__3dBlock-tournaments
-          .Block-tournaments__text
-            h2
-              font-size: 58px
-            a
-          .Block-tournaments__cards
-            a
-              .card-Upcomingtournaments__container
-              .card-Previoustournaments__container
-                .card-tournaments
-          .Block-tournaments__cards.bottom
+  .main__3dBlock
+    .main__3dBlock__container
+      .main__3dBlock-tournaments
+        .Block-tournaments__text
+          h2
+            font-size: 58px
+          a
+        .Block-tournaments__cards
+          a
+            .card-Upcomingtournaments__container
+            .card-Previoustournaments__container
+              .card-tournaments
+        .Block-tournaments__cards.bottom
 @media screen and (max-width: 1400px)
+
+  .main__video-container
+    height: 800px
+    .main__video-container__text
+      font-size: 36px
+      width: 776px
+    .main__button
+  .main__info-container
+    height: 800px
+    .main__info-container-text
+      font-size: 28px
+      padding: 0px 117px
   .main__wrapper
-    .main__video-container
-      height: 800px
-      .main__Headline1
-      .main__video-container__text
-        font-size: 36px
-        width: 776px
-      .main__button
-    .main__info-container
-      height: 800px
-      .main__info-container-text
-        font-size: 28px
-        padding: 0px 117px
+
     .main__3dBlock
       .main__3dBlock__container
         .main__3dBlock-tournaments
@@ -141,19 +140,21 @@
                 .card-tournaments
           .Block-tournaments__cards.bottom
 @media screen and (max-width: 1100px)
+
+  .main__video-container
+    height: 800px
+    .main__Headline1
+    .main__video-container__text
+      font-size: 36px
+      width: 776px
+    .main__button
+  .main__info-container
+    height: 800px
+    .main__info-container-text
+      font-size: 28px
+      padding: 0px 117px
   .main__wrapper
-    .main__video-container
-      height: 800px
-      .main__Headline1
-      .main__video-container__text
-        font-size: 36px//32
-        width: 776px
-      .main__button
-    .main__info-container
-      height: 800px
-      .main__info-container-text
-        font-size: 28px //20
-        padding: 0px 117px
+
     .main__3dBlock
       .main__3dBlock__container
         margin-top: 90px
@@ -161,7 +162,7 @@
         .main__3dBlock-tournaments
           .Block-tournaments__text
             h2
-              font-size: 34px//24
+              font-size: 34px
             a
           .Block-tournaments__cards
             position: relative
@@ -184,25 +185,26 @@
 .main__3dBlock-tournaments.past__tournaments
   margin-bottom: 800px
 @media screen and (max-width: 900px)
-  .main__wrapper
-    .main__video-container
-      background: url()
-      flex-direction: column
-      height: 100%
-      gap: 80px
-      align-items: center
-      .main__Headline1
-      .main__video-container__text
-        margin: 0
-        margin-top: 200px
-        width: 80vw
-      .main__button
-    .main__info-container
-      height: 100%
+
+  .main__video-container
+    background: url()
+    flex-direction: column
+    height: 100%
+    gap: 80px
+    align-items: center
+    .main__Headline1
+    .main__video-container__text
+      margin: 0
       margin-top: 200px
-      margin-bottom: 200px
-      font-size: 24px //20
-      .main__info-container-text
+      width: 80vw
+    .main__button
+  .main__info-container
+    height: 100%
+    padding: 200px 0px
+    font-size: 24px
+    .main__info-container-text
+  .main__wrapper
+
     .main__3dBlock
       .main__3dBlock__container
         padding: 0px 24px
@@ -211,7 +213,7 @@
             flex-direction: column
             align-items: flex-start
             h2
-              font-size: 34px//24
+              font-size: 34px
             a
           .Block-tournaments__cards
             a
@@ -220,20 +222,22 @@
                 .card-tournaments
           .Block-tournaments__cards.bottom
 @media screen and (max-width: 640px)
+
+  .main__video-container
+    .main__Headline1
+    .main__video-container__text
+      font-size: 32px
+    .main__button
+  .main__info-container
+    .main__info-container-text
+      font-size: 24px
+      padding: 0px 24px
   .main__wrapper
-    .main__video-container
-      .main__Headline1
-      .main__video-container__text
-        font-size: 32px
-      .main__button
-    .main__info-container
-      .main__info-container-text
-        font-size: 24px
-        padding: 0px 24px
+
     .main__3dBlock
       .main__3dBlock__container
         gap: 66px
-        margin-top: 267px
+        margin-top: 66px
         .main__3dBlock-tournaments
           .Block-tournaments__text
             h2
@@ -275,30 +279,19 @@
         .main__3dBlock-tournaments.past__tournaments
           margin-bottom: 932px
 @media screen and (max-width: 500px)
-  .main__wrapper
-    .main__video-container
-      gap: 48px
-      .main__Headline1
-      .main__video-container__text
-        margin-top: 120px
-        width: 87vw
-      .main__button
-        margin: 0px 10px 10px
-        .button
-          padding: 16px 48px
-    .main__info-container
-      .main__info-container-text
-        font-size: 20px
-    .main__3dBlock
-      .main__3dBlock__container
 
-        .main__3dBlock-tournaments
-          .Block-tournaments__text
-            h2
-            a
-          .Block-tournaments__cards
-            a
-              .card-Upcomingtournaments__container
-              .card-Previoustournaments__container
-                .card-tournaments
-          .Block-tournaments__cards.bottom
+  .main__video-container
+    gap: 48px
+    z-index: 0
+    .main__Headline1
+    .main__video-container__text
+      margin-top: 120px
+      width: 87vw
+    .main__button
+      margin: 0px 10px 10px
+      .button
+        padding: 16px 48px
+  .main__info-container
+    .main__info-container-text
+      font-size: 20px
+  .main__wrapper
