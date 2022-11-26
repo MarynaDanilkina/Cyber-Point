@@ -1,5 +1,4 @@
 import React from 'react';
-import './edit.sass';
 const Edit = () => {
   return (
     <>

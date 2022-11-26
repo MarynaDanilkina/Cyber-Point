@@ -7,7 +7,6 @@
     background-size: 100% 100%
     border-radius: 8px
     width: 1208px
-    /**display: flex
     justify-content: center
     align-items: center
     margin: auto
@@ -73,7 +72,6 @@
                   line-height: 160%
                   color: var(--white)
                 .modal__input-teams.editProfile
-                  //width: 53vw
                   width: 1046px
                   border: 1px solid var(--grey)
                   border-radius: 4px
@@ -107,7 +105,16 @@
               border: 1px solid var(--grey)
               border-radius: 4px
               background-color: transparent
-
+.modal__container .modal__team .modal__info-container .modal__form-team .modal__info-infoTeam label .modal__input-teamsLink:hover
+  border: 1px solid var(--primary)
+  .modal__input-copy
+    svg
+      stroke: var(--primary)
+.modal__container .modal__team .modal__info-container .modal__form-team .modal__info-infoTeam label .modal__input-teamsLink:active
+  border: 1px solid var(--midPrimary)
+  .modal__input-copy
+    svg
+      stroke: var(--midPrimary)
 input::placeholder
   font-family: 'RF Dewi Expanded'
   font-style: normal
@@ -203,19 +210,18 @@ input:active, textarea:active
               .modal__input__description
                 label
                   .modal__input-teams__description
-                    /**width: 74vw*/
                     width: 80.6vw
             label
               .modal__input-copy
               .modal__input-teamsLink
                 width: 100%
+
 @media screen and (max-width: 1000px)
   .modal__container
     .modal__team
       width: 85vw
       padding: 25px
       .modal__info-container
-        //padding: 0px
         padding: 30px 20px
         margin: 0px
         gap: 48px
@@ -229,8 +235,9 @@ input:active, textarea:active
             flex-direction: column
             label
               .logoTeams
-                width: 260px
+                width: 160px
               .BannerTeams
+                width: 80vw
           .modal__info-infoTeam
             .modal__info__title
               p
@@ -241,7 +248,6 @@ input:active, textarea:active
                 label
                   .modal__input-teams
                     width: 77vw
-                    //width: 80.6vw
                   .modal__input-teams.editProfile
                     width: 77vw
 
@@ -253,7 +259,6 @@ input:active, textarea:active
               .modal__input-copy
               .modal__input-teamsLink
                 width: 77vw
-                //width: 80.6vw
 @media screen and (max-width: 600px)
   .modal__container
     .modal__team
@@ -261,7 +266,6 @@ input:active, textarea:active
       padding: 0px
       margin: auto
       .modal__info-container
-        //width: 73vw
         .modal__info
           p
             font-size: 23px
@@ -272,7 +276,6 @@ input:active, textarea:active
             width: 73vw
             label
               .logoTeams
-                width: 73vw
               .BannerTeams
                 width: 73vw
           .modal__info-infoTeam
@@ -284,19 +287,16 @@ input:active, textarea:active
               .modal__input
                 label
                   .modal__input-teams
-                    //width: 73vw
                     width: 66vw
               .modal__input__description
                 label
                   .modal__input-teams__description
-                    //width: 100%
                     width: 66vw
             label
               .modal__input-copy
 
               .modal__input-teamsLink
                 width: 66vw
-                //width: 73vw
           .modal__info-button
             div
               display: flex
@@ -321,7 +321,6 @@ input:active, textarea:active
     .modal__team
       width: 87vw
       margin: auto
-      //margin: 100px 0px
       .modal__info-container
         .modal__info
           p

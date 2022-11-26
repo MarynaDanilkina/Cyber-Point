@@ -7,10 +7,10 @@ const BannerTeams = () => {
   
   return (
     <div className="BannerTeams__container">
-      <img src='Banner.png' alt='pfp' className='BannerTeams' />
+      <img src='BannerTeam.png' alt='pfp' className='BannerTeams' />
       <div className="BannerTeams__edit">
-        <p>Баннер</p>
         <Edit />
+        <p>Баннер</p>
       </div>
     </div>
   );

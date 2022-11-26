@@ -7,7 +7,7 @@ import './footer.sass';
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className='footer' id='footer'>
       <div className='footer__wrapper _container'>
         <div className='footer__ThroughBlock'>
           <div className='footer__LeftPart-Noise'></div>

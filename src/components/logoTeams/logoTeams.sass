@@ -1,3 +1,27 @@
 .logoTeams
   width: 160px
   height: 160px
+.LogoTeams__container
+  background-color: #141515
+  position: relative
+  .BannerTeams__edit
+    position: absolute
+    display: none
+    flex-direction: column
+    align-items: center
+    top: 30%
+    left: 21%
+.LogoTeams__container:hover
+  background: linear-gradient(0deg, rgba(20, 21, 21, 0.64), rgba(20, 21, 21, 0.64))
+  cursor: pointer
+  .BannerTeams__edit
+    display: flex
+    svg
+      stroke: var(--primary)
+.LogoTeams__container:active
+  background: linear-gradient(0deg, rgba(20, 21, 21, 0.64), rgba(20, 21, 21, 0.64))
+  cursor: pointer
+  .BannerTeams__edit
+    display: flex
+    svg
+      stroke: var(--midPrimary)

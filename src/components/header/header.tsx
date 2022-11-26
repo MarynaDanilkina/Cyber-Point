@@ -46,7 +46,7 @@ const Header = () => {
               <li className='header__item'><Link to="/InDev">Рейтинг</Link></li>
               <li className='header__item'><Link to="/rules">Регламент</Link></li>
             {clickTournaments === true ? <DropDownNavlink /> : null}
-              <li className='header__item'>Контакты</li>
+              <li className='header__item'><a href="#footer">Контакты</a></li>
             </ul>
           </nav>
         </div>

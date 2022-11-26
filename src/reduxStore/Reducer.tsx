@@ -20,7 +20,7 @@ export const initialState: IInitialState = {
   modalTeamNew: false,
   modalExit: false,
   modalSuccess: false,
-  LogoTeams: '/logoTeamNew.png',
+  LogoTeams: '',
   BanerTeams: '',
   modalEditProfile: false,
   modalEditTeam: false,
