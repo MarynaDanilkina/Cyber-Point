@@ -17,7 +17,7 @@ const ModalDiscord = () => {
   return (
     <>
       <div className="modal__container active">
-        <div className="modal">
+        <div className="modal discord">
           <div className="modal__info-container">
             <div className='modal__info'>
               <p>Вход через discord</p>

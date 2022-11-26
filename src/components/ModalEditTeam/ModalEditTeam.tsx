@@ -43,7 +43,7 @@ const ModalEditTeam = () => {
   return (
     <>
       <div className="modal__container active">
-        <div className="modal__team">
+        <div className="modal__team newTeam">
           <div className="modal__info-container">
             <div className='modal__info'>
               <p>редактирование команды</p>
