@@ -23,13 +23,13 @@
   height: 100%
 .main__info-container:before
   position: absolute
-  width: 55vw
-  height: 29vw
+  width: 57vw
+  height: 42vw
   background: var(--primary)
   opacity: 0.32
   filter: blur(160px)
   transform: rotate(15deg)
-  animation: animTop 10s infinite
+  animation: animTop 15s infinite
 .main__info-container:after
   position: absolute
   width: 46vw
@@ -38,47 +38,87 @@
   opacity: 0.32
   filter: blur(160px)
   z-index: 0
-  animation: animBottom 10s infinite
+  animation: animBottom 15s infinite
 .header:before
   position: absolute
-  width: 55vw
-  height: 29vw
+  width: 52vw
+  height: 25vw
   background: var(--primary)
   opacity: 0.32
   filter: blur(160px)
   transform: rotate(15deg)
-  animation: animTop 10s infinite
+  animation: animTop 15s infinite
 
 .header:after
   position: absolute
-  width: 46vw
-  height: 46vw
+  width: 37vw
+  height: 35vw
   background: var(--primary)
   opacity: 0.32
   filter: blur(160px)
   z-index: 0
-  animation: animBottom 10s infinite
-  @keyframes animBottom
-    from
-      right: -15%
-      bottom: -66%
-    50%
-      right: -15%
-      bottom: 51%
-    to
-      right: -15%
-      bottom: -66%
-  @keyframes animTop
-    from
-      top: -29%
-      left: -30%
-    50%
-      top: 67%
-      left: -30%
-    to
-      top: -29%
-      left: -30%
+  animation: animBottom 15s infinite
+@keyframes animBottom
+  0%
+    right: -20%
+    bottom: -50%
 
+  25%
+    right: 0%
+    bottom: -50%
+  80%
+    right: -26%
+    bottom: -10%
+  100%
+    right: -20%
+    bottom: -50%
+
+@keyframes animTop
+  0%
+    top: -19%
+    left: -19%
+
+  25%
+    top: -21%
+    left: -2%
+  80%
+    top: 0%
+    left: -16%
+  100%
+    top: -19%
+    left: -19%
+
+@media screen and (max-width: 400px)
+  .main__info-container:after,
+  .main__info-container:before
+    display: none
+  .header:before
+    width: 81vw
+    height: 64vw
+  .header:after
+    width: 62vw
+    height: 61vw
+    bottom: 41%
+
+    right: -11px
+    opacity: 6
+    animation: animBottom400 15s infinite
+@keyframes animBottom400
+  0%
+    bottom: 41%
+
+    right: -11px
+
+  30%
+    bottom: 55%
+    right: 7px
+  60%
+    bottom: 60%
+    right: -15px
+  100%
+    bottom: 41%
+
+    right: -11px
 .header__left
   display: flex
   align-items: center
@@ -201,19 +241,20 @@ a
   .header__input
     font-size: 16px
   .logotype
-    width: 100px
+    width: 113px
   .header__pfp
     svg
       width: 40px
 
   .header__menu-icon
-    margin-left: 20px
+    margin-left: 29px
     z-index: 200
     display: block
     position: relative
-    width: 50px
+    width: 39px
     height: 16px
     cursor: pointer
+    margin-top: -10px
   .header__menu-icon span,
   .header__menu-icon::before,
   .header__menu-icon::after
@@ -230,11 +271,13 @@ a
 
   .header__menu-icon::before
     top: 0
+    width: 39px
 
   .header__menu-icon::after
     bottom: 0
-    width: 30px
-    margin-left: 20px
+    width: 24px
+    margin-left: 15px
+
   .header__menu-icon span
     top: 50%
     transform: scale(0) translate(0px, -50%)

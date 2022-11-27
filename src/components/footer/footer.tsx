@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='footer__card-wrapper'>
               <div className='footer__card-text'>
                 <h3>
-                  выигрывай турниры со своей командой!
+                  выигрывай <span>турниры</span> со своей командой!
                 </h3>
                 <p>Присоединяйся к миру соревновательных игр высокого уровня на Cyper Point и выигрывай денежные призы!</p>
               

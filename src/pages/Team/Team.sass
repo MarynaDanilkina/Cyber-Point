@@ -44,7 +44,7 @@
           width: 128px
           height: 128px
           position: absolute
-          bottom: -60px
+          bottom: -66px
       .profile-team__titles
         display: flex
         flex-direction: column
@@ -80,6 +80,7 @@
               margin: 0
               text-align: center
               margin-bottom: 20px
+              width: 900px
 
 .Cards-team__container
   display: flex
@@ -105,6 +106,7 @@
       .profile__team
         p
           font-size: 14px
+          width: 800px
 @media screen and (max-width: 1100px)
   .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles
     .profile__title
@@ -128,10 +130,13 @@
         .profile__team
           p
             font-size: 12px
+            width: 450px
 @media screen and (max-width: 700px)
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles .profile__title
+    gap: 0px
   .profile-team__container .profile__title-container .profile__title__wrapper
     .profile-team__titles
-      padding: 0px 20px
+      padding: 0px 24px
       text-align: center
       .profile__title
         position: relative
@@ -140,13 +145,17 @@
           width: 400px
         svg
           position: absolute
-          right: -10px
-          top: 10px
+          left: 211px
+          top: 6px
+          width: 24px
       .profile__exit-faceit__container
         .profile__team
           p
             font-size: 12px
 @media screen and (max-width: 500px)
+  .CBPT
+    padding: 0px 50px
+    margin: 0px auto
   .Cards-team__container
     gap: 16px
     margin-bottom: 995px
@@ -158,10 +167,22 @@
         .profile__title-h3
           font-size: 24px
           width: 312px
+          line-height: 170%
   .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles .profile__exit-faceit__container .profile__team p
     width: 312px
   .profile-team__container .profile__title-container .profile__title__wrapper .profile-team .pfp
     width: 98px
     height: 98px
   .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles
-    margin-top: 64px
+    margin-top: 58px
+  .profile-team__container
+    margin: 0px auto 0px
+    display: flex
+    flex-direction: column
+    gap: 27px
+@media screen and (max-width: 400px)
+  .profile-team__container .profile__title-container .profile__title__wrapper .profile-team__titles .profile__title svg
+    position: absolute
+    left: 211px
+    top: 6px
+    width: 24px

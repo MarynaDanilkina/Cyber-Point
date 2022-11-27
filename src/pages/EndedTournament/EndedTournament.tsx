@@ -13,7 +13,7 @@ const EndedTournament = () => {
         <Header />
         <div className="tournament__container-info">
           <div className="tournament__info">
-            <h2 className="tournament__title-info">CP Cup #3</h2>
+            <h2 className="tournament__title-info">Beast Mode #1</h2>
             <div className='tournament__Cards-container'>
               <Card title={'Приз:'} info={'$ 745'} />
               <Card title={'Дата:'} info={'20.11.2022'} />

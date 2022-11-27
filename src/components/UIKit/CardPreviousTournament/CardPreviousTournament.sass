@@ -12,7 +12,8 @@
   height: 360px
   background-repeat: no-repeat
   .card-tournaments
-    padding: 0px 24px
+    //padding: 0px 24px
+    padding: 0px 0px
     margin: 16px 24px
     display: flex
     flex-direction: column
@@ -102,8 +103,13 @@
     color: var(--primary)
   .tournament-name__card:hover .card-Previoustournaments__container .card-tournaments .card-tournaments__top-container .card-tournaments__top-title-container .card-tournaments__title p
     color: var(--primary)
+  .card-tournaments__top-icon
+    svg
+      width: 24px
+  .card-Upcomingtournaments__container .card-tournaments
+    margin: 8px 16px
 @media screen and (max-width: 440px)
   .card-Previoustournaments__container .card-tournaments
     padding: 0px 84px 0px 0px
   .card-Previoustournaments__container .card-tournaments .card-tournaments__bottom-container .card-tournaments__bottom-price p
-    font-size: 30px
+    font-size: 32px

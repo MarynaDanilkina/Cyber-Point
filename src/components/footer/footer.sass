@@ -77,7 +77,7 @@
   right: -55px
 .footer__FooterContainer
   height: 530px
-  background: var(--lightBlack)
+  background: var(--black)
   display: flex
   align-items: flex-end
   justify-content: space-between
@@ -224,6 +224,7 @@
     width: 500px
     height: 350px
   .footer__button-team
+    margin-top: 35px
     height: 250px
     height: 48px
   .SecondaryButton
@@ -239,21 +240,21 @@
     margin: 24px 32px
   .footer__FooterContainer
     flex-direction: column
-    margin-top: -256px
+    margin-top: -261px
     gap: 0px
     align-items: center
     height: 687px
     justify-content: end
     .footer__LeftPart
-      margin: 0px
+      margin: 10px
     .footer__RightPart
       margin: 0px
       display: flex
       flex-direction: column
-      margin-bottom: 70px
+      margin-bottom: 82px
       justify-content: center
       align-items: center
-      margin-top: 48px
+      margin-top: 39px
       .footer__RightPart-email
         display: flex
         justify-content: center
@@ -279,7 +280,7 @@
       display: flex
       justify-content: center
       margin-top: 64px
-      margin-bottom: 48px
+      margin-bottom: 45px
       a
         svg
           width: 131px
@@ -305,6 +306,8 @@
     z-index: 0
     top: -25vw
     right: -41vw
+  .footer__FooterContainer .footer__RightPart .footer__RightPart-email .RightPart-email__p .RightPart-email
+    font-size: 16px
 
 @media screen and (max-width: 600px)
   .footer__card
@@ -322,3 +325,7 @@
       width: 248px
   .privacy__2ndBlock .privacy__info-container
     margin-bottom: 945px
+  .footer__card-text
+    h3
+      span
+        padding-right: 45px

@@ -36,13 +36,13 @@ const Team = () => {
               </div>
               <div className="profile-team__titles">
                 <div className="profile__title">
-                  <h3 className='profile__title-h3'>(CBPT)&shy; Cyber-Point Team</h3>
+                  <h3 className='profile__title-h3'><span className='CBPT'>(CBPT) </span>Cyber-Point Team</h3>
                   <div onClick={() => РедактироватьПрофиль()}><Edit /></div>
                 </div>
                 <div className="profile__exit-faceit__container">
                   <div className="profile__team">
-                    <p>Cyber Point - платформа, созданная для соревновательной игры в CS:GO. Это место,<br />
-                    где можно создать свою команду или присоединиться к уже существующей <br />и выигрывать денежные призы в турнирах!</p>
+                    <p>Cyber Point - платформа, созданная для соревновательной игры в CS:GO. Это место,
+                    где можно создать свою команду или присоединиться к уже существующей и выигрывать денежные призы в турнирах!</p>
                   </div>
                 </div>
               </div>

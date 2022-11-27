@@ -24,7 +24,7 @@ const Main = () => {
       <header className="header _container">
         <Header />
         <div className='main__video-container'>
-            <p className='main__video-container__text'>Учавствуй в <span className='main__Headline1'>турнирах по CS:GO</span> вместе с командой и выигрывай призы!</p>
+          <p className='main__video-container__text'><span className='participate-span'>Учавствуй</span> в <span className='main__Headline1'>турнирах по CS:GO </span><span className='together-span'>вместе</span> с командой и выигры<wbr/>вай призы!</p>
             <div className="main__button" onClick={() => СоздатьКоманду()}>
               <ButtomAddTeam />
             </div>

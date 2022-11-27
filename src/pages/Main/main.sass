@@ -38,7 +38,7 @@ main
   .main__info-container-text
     font-family: 'RF Dewi Expanded'
     font-style: normal
-    font-weight: 600
+    font-weight: 400
     font-size: 32px
     line-height: 160%
     text-align: center
@@ -92,6 +92,9 @@ main
   height: 420px
 .main__3dBlock-tournaments.past__tournaments
   margin-bottom: 960px
+.main__Headline1
+  font-weight: 600
+  color: var(--primary)
 @media screen and (max-width: 1500px)
   .main__3dBlock
     .main__3dBlock__container
@@ -107,7 +110,12 @@ main
               .card-tournaments
         .Block-tournaments__cards.bottom
 @media screen and (max-width: 1400px)
+  .main__wrapper .main__3dBlock .main__3dBlock__container .main__3dBlock-tournaments .Block-tournaments__text
+    margin-right: 48px
 
+  .main__wrapper .main__3dBlock .main__3dBlock__container
+    align-items: self-end
+    padding: 160px 0px
   .main__video-container
     height: 800px
     .main__video-container__text
@@ -200,18 +208,19 @@ main
     .main__button
   .main__info-container
     height: 100%
-    padding: 200px 0px
+    padding: 246px 0px 191px
     font-size: 24px
     .main__info-container-text
   .main__wrapper
 
     .main__3dBlock
       .main__3dBlock__container
-        padding: 0px 24px
+        padding: 0px 0px
         .main__3dBlock-tournaments
           .Block-tournaments__text
             flex-direction: column
             align-items: flex-start
+            gap: 8px
             h2
               font-size: 34px
             a
@@ -231,12 +240,12 @@ main
   .main__info-container
     .main__info-container-text
       font-size: 24px
-      padding: 0px 24px
+      padding: 0px 23px
   .main__wrapper
 
     .main__3dBlock
       .main__3dBlock__container
-        gap: 66px
+        gap: 63px
         margin-top: 66px
         .main__3dBlock-tournaments
           .Block-tournaments__text
@@ -255,9 +264,9 @@ main
                 width: 280px
                 height: 320px
                 .card-tournaments
-                  margin: 4px 13px
+                  margin: 5px 16px
                   .card-tournaments__top-container
-                    height: 263px
+                    height: 258px
                     .card-tournaments__top-title-container
                       .card-tournaments__title
                         p
@@ -266,7 +275,7 @@ main
                 width: 280px
                 height: 320px
                 .card-tournaments
-                  margin: 4px 13px
+                  margin: 4px 16px
                   .card-tournaments__top-container
                     height: 263px
                     .card-tournaments__top-title-container
@@ -279,19 +288,46 @@ main
         .main__3dBlock-tournaments.past__tournaments
           margin-bottom: 932px
 @media screen and (max-width: 500px)
-
+  .main__tournament-pagination
+    margin-top: 51px
+  .participate-span
+    padding-right: 15px
+  .together-span
+    padding-right: 98px
   .main__video-container
     gap: 48px
     z-index: 0
     .main__Headline1
     .main__video-container__text
       margin-top: 120px
-      width: 87vw
+      width: 86.67vw
+      word-wrap: break-word
     .main__button
       margin: 0px 10px 10px
       .button
-        padding: 16px 48px
+        padding: 14px 48px
   .main__info-container
     .main__info-container-text
       font-size: 20px
-  .main__wrapper
+      text-align: left
+  .main__wrapper .main__3dBlock .main__3dBlock__container .main__3dBlock-tournaments
+    .Block-tournaments__text
+      margin-right: 0px
+      padding: 0px 24px
+      gap: 3px
+  .main__wrapper .main__3dBlock .main__3dBlock__container .main__3dBlock-tournaments .container__clider
+    width: 100vw
+  .main__wrapper .main__3dBlock .main__3dBlock__container .main__3dBlock-tournaments .Block-tournaments__cards
+    left: 24px
+    gap: 16px
+  .card-Upcomingtournaments__container .card-tournaments .card-tournaments__top-container .card-tournaments__top-title-container .card-tournaments__date p
+    font-size: 12px
+    margin-top: 8px
+  .Block-tournaments__card, .tournament-name__card
+    width: 100%
+    height: 100%
+  .card-Previoustournaments__container .card-tournaments .card-tournaments__top-container .card-tournaments__top-title-container .card-tournaments__date p
+    font-size: 12px
+    margin-top: 8px
+  .main__wrapper .main__3dBlock .main__3dBlock__container .main__3dBlock-tournaments .Block-tournaments__cards a .card-Previoustournaments__container .card-tournaments .card-tournaments__top-container
+    height: 258px
